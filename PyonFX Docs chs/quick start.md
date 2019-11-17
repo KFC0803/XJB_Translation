@@ -1,4 +1,6 @@
-#Quick Start Guide
+
+# Quick Start Guide
+
 ********************************
 
 
@@ -13,7 +15,8 @@
 
 如果你还不会安装Python，你可以从网上找点教程，比如 https://www.liaoxuefeng.com/wiki/1016959663602400/1016959856222624
 
-##安装
+## 安装
+
 运行如下命令，该命令将使用pip安装并更新库：
 ```
 pip install --upgrade https://github.com/CoffeeStraw/PyonFX/zipball/master
@@ -25,7 +28,8 @@ pip3 install --upgrade https://github.com/CoffeeStraw/PyonFX/zipball/master
 ```
 好了。一切准备就绪，当你需要更新时，就再运行一次上面的命令
 
-##安装-额外步骤
+## 安装-额外步骤
+
 这一步不需要用到此库。但就我个人而言，Aegisub太老/太臃肿了，我需要一种更舒适的工作方式。
 
 这就是为什么PyonFX集成了一种额外的方式，你可以更快地在修改软字幕之后使用[MPV播放器][2]预览你的作品。如果你*不*使用Windows，安装它就足够了。
@@ -34,7 +38,8 @@ pip3 install --upgrade https://github.com/CoffeeStraw/PyonFX/zipball/master
 
 你需要添加包含mpv的.exe的文件夹到PATH中，通常是C:\Program Files\mpv。
 
-##开始
+## 开始
+
 你可能想检查一下现在一切是否正常。为此，我建议你尝试运行一些在[项目github官方仓库][4]中的示例。
 
 要在Python中运行脚本，只需运行以下命令：
@@ -49,7 +54,7 @@ python3 namefile.py
 
 我强烈建议你生成并研究examples文件夹中的每个示例（从[这里][5]下载最新的）。这些都是为零基础初学者进阶为高级用户准备的，并详细解释了库中所有相关函数的用法。
 
-##Tips
+## Tips
 
  - 不要一口气做一个KFX。休息一下，散散步，从周围环境中寻求灵感；
  - 选择视频元素。你的效果应以某种方式与背景契合；
@@ -58,7 +63,7 @@ python3 namefile.py
  - 如果背景太华丽，请尝试插入面板形状*(panel shape)*，以将文本置于“安全地带”中；
  - 适应卡拉OK时间和声音*(voice)*。快歌没有音节持续时间，不适合使用需要一些时间才能看到的效果。
 
-###脚注
+### 脚注
 
  - ASS标签大全 http://docs.aegisub.org/3.2/ASS_Tags/
  - 推荐的Python3 教程:
