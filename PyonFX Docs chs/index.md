@@ -1,4 +1,4 @@
-#The PyonFX Library Documentation
+# The PyonFX Library Documentation
 ********************************
 
      "PyonFX是一条制作KFX (Karaoke Effects) 以及ASS (Advanced Substation Alpha) 字幕格式复杂排版的简单途径。"
