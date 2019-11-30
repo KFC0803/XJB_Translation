@@ -1,22 +1,22 @@
 """
-This script visualizes which ASS values you got from input ASS file.
+此脚本展示了您从输入ASS文件中获得的ASS值。
 
-First of all you need to create an Ass object, which will help you to manage
-input/output. Once created, it will automatically extract all the informations
-from the input .ass file.
+首先你需要创建一个Ass对象，它将帮助你管理输入/输出。
+一旦创建，它将自动从输入的 .ass 文件中
+提取所有信息。
 
-For more info about the use of Ass class: 
+更多使用 Ass 类 的信息: 
 https://pyonfx.readthedocs.io/en/latest/reference/ass%20core.html#pyonfx.ass_core.Ass
 
-By executing this script, you'll discover how ASS contents,
-like video resolution, styles, lines etc. are stored into objects and lists.
-It's important to understand it, because these Python lists and objects
-are exactly the values you'll be working with the whole time to create KFX.
+通过执行这个脚本，你会看到ASS里有什么,
+例如视频分辨率一样、样式、行等 都存储在对象和列表中。
+理解它很重要，因为这些 Python 列表、对象
+将贯穿您编写 KFX 的整个过程
 
-Don't worry about the huge output, there are a lot of information
-even in a small input file like the one in this folder.
+不要为如此巨大的输出担心，即使是像这个文件夹中
+那个小的输入文件，也有很多信息。
 
-You can find more info about each object used to represent the input .ass file here:
+您可以在此处找到每个用于表示输入 .ass 文件对象的更多信息：
 https://pyonfx.readthedocs.io/en/latest/reference/ass%20core.html
 """
 from pyonfx import *
