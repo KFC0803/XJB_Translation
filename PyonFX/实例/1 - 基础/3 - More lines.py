@@ -1,11 +1,11 @@
 """
-Let's go a bit further.
+让我们更进一步。
 
-In this script we will iterate through all the lines of our .ass,
-create a copy for each of them (see the reason for that in the previous example)
-and finally write them back on our output with time shifted by 2000ms.
+在这个脚本中，我们将遍历所有 .ass 中的行，
+为每一行创建一个副本（原因请参见上一个示例）
+平移2000毫秒，最后将它们写回我们的输出。
 
-For more info about the copy method:
+有关copy方法的详细信息：
 https://pyonfx.readthedocs.io/en/latest/reference/ass%20core.html#pyonfx.ass_core.Line.copy
 """
 from pyonfx import *

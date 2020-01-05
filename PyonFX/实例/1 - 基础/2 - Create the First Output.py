@@ -20,7 +20,7 @@ PyonFX还将自动Print您已写入的行数和进程持续时间。
 更多详细信息，请访问: https://pyonfx.readthedocs.io/en/latest/reference/ass%20utility.html#pyonfx.ass_utility.Ass.save
 
 最后，调用 open_aegisub 来在Aegisub打开输出。一般来说，您要是更愿意
-用MPV打开的话，可以调用 open-MPV ，然而示例的ass文件没有视频。
+用MPV打开的话，可以选择调用 open-MPV ，然而示例的ass文件没有视频。
 更多详细信息，请访问:
 - open_aegisub: https://pyonfx.readthedocs.io/en/latest/reference/ass%20core.html#pyonfx.ass_core.Ass.open_aegisub
 - open_mpv: https://pyonfx.readthedocs.io/en/latest/reference/ass%20core.html#pyonfx.ass_core.Ass.open_mpv
