@@ -1,0 +1,71 @@
+[33mcommit c5a413f27fdd17b08d15c5ef12d891f74ab91b34[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: KFC0803 <gongye0803@gmail.com>
+Date:   Sun Jan 5 21:01:14 2020 +0800
+
+    1 - 基础 翻译完成
+
+[33mcommit c6bcb15a43d23fd09a902cb3a15d3108d083d61b[m[33m ([m[1;31morigin/master[m[33m)[m
+Author: KFC0803 <gongye0803@gmail.com>
+Date:   Sat Nov 30 15:27:56 2019 +0800
+
+    add translation for samples
+
+[33mcommit cdbcc08ac28f3db522cba686fedd8914c3ee02d6[m
+Author: KFC0803 <gongye0803@126.com>
+Date:   Sat Nov 30 14:31:58 2019 +0800
+
+    Update readme.md
+
+[33mcommit bc20b652132b57a463aed84b9451e2acf20bdaa0[m
+Author: KFC0803 <gongye0803@gmail.com>
+Date:   Sat Nov 30 14:24:45 2019 +0800
+
+    fix
+
+[33mcommit 2ce29afc7a36c8ae1b5ecd17642b5e4793684292[m
+Author: KFC0803 <gongye0803@gmail.com>
+Date:   Sun Nov 24 19:33:41 2019 +0800
+
+    add a guide for installing(chinese)
+
+[33mcommit ed327db67b4275ed546ba6ad16e2b4f815d24523[m
+Author: KFC0803 <gongye0803@gmail.com>
+Date:   Sun Nov 17 16:33:06 2019 +0800
+
+    fix name add a file
+
+[33mcommit 839c78a4e71f8296b547848915316fc7bb9ee271[m
+Author: KFC0803 <gongye0803@126.com>
+Date:   Sun Nov 17 16:15:56 2019 +0800
+
+    fix x2
+
+[33mcommit 3eac7a12d9a5b78745e5930fd8bc53f587bac6b9[m
+Author: KFC0803 <gongye0803@126.com>
+Date:   Sun Nov 17 15:50:54 2019 +0800
+
+    fix markdown
+
+[33mcommit b41cf0352b6624095ad50b7569d58ea408cad193[m
+Author: KFC0803 <gongye0803@126.com>
+Date:   Sun Nov 17 15:50:26 2019 +0800
+
+    fix markdown
+
+[33mcommit 40b2f2c98bc46bc3df68a27025007030f5748c12[m
+Author: KFC0803 <gongye0803@gmail.com>
+Date:   Sun Nov 17 15:47:55 2019 +0800
+
+    edit rm
+
+[33mcommit 0bb04af970e125c4900574629ad5342d7c82351e[m
+Author: KFC0803 <gongye0803@gmail.com>
+Date:   Sun Nov 17 15:45:58 2019 +0800
+
+    add PyonFX docs
+
+[33mcommit 2468426110db3fa477f1e991cdee119adb90c77d[m
+Author: KFC0803 <gongye0803@gmail.com>
+Date:   Sun Nov 17 14:42:42 2019 +0800
+
+    first commit
