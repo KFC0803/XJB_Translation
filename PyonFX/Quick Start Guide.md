@@ -65,9 +65,8 @@ python3 namefile.py
 
 ### 脚注
 
- - ASS标签大全 https://aegi.vmoe.info/docs/3.2/ASS_Tags/
- - 推荐的Python3 教程:https://www.liaoxuefeng.com/wiki/1016959663602400
-（不是我推荐的——译者注）
+ - ASS标签大全：https://aegi.vmoe.info/docs/3.2/ASS_Tags/
+ - 推荐的Python3 教程：https://www.liaoxuefeng.com/wiki/1016959663602400
 
   [1]: https://www.python.org/downloads/
   [2]: https://mpv.io/
