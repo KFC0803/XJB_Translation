@@ -22,7 +22,7 @@
 pip install --upgrade https://github.com/CoffeeStraw/PyonFX/zipball/master
 ```
 
-或者，如果由于某种原因（例如你不使用Windows上，或者同时装了Python2及Python3）而无法运行:
+或者，如果由于某种原因（例如你不使用Windows，或者同时装了Python2及Python3）而无法运行:
 ```
 pip3 install --upgrade https://github.com/CoffeeStraw/PyonFX/zipball/master
 ```
