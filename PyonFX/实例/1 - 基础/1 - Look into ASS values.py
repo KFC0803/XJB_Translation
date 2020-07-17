@@ -24,8 +24,10 @@ from pyonfx import *
 io = Ass("in.ass")
 meta, styles, lines = io.get_data()
 
-print( meta )
+#print( meta )
 print("▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀")
-print( styles )
+#print( styles )
 print("▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀")
-print( lines )
+#print( lines )
+for line in lines:
+	print(line)

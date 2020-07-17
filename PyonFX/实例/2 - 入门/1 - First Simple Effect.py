@@ -1,26 +1,26 @@
 """
-And here we are with our first complete effect.
-As you can see, we have now filled our romaji, kanji and sub functions.
+在这里我们有了第一个完整的特效。
+如你所见，我们现在已经填满了romaji, kanji 和 sub 函数。
 
-Starting from the simple one, the sub function make use of leadin and leadout times for fitting line-to-line changes.
-We then construct the text of each line, giving an alignment, a position and a fad to make a soft entrance and exit.
+先从简单的开始，sub 函数使用行前时间和行后时间来适应行与行之间的变化。
+随后我们构建每一行的文本，给定an（对齐方式）、pos（坐标）和fad（淡入淡出）来使入场和退场丝般顺滑。
 	(Docs: https://pyonfx.readthedocs.io/en/latest/reference/ass%20core.html#pyonfx.ass_core.Line.leadin)
 
-In the romaji function instead, we want to create an effect that works with syllables.
-In order to do do that, every syllable has to be one dialog line,
-so we loop through syllable entries of current line.
-Using a utility provided in Utils module, all_non_empty(), we assure
-that we will not work with blank syllables or syls with duration equals to zero.
+在 romaji 函数中，我们要构建一个针对音节的效果。
+为此，每一个音节都得是一个对话行，
+所以，我们循环遍历当前行的音节。
+我们用了 Utils 模块中的一个实用程序，all_non_empty()，
+因为我们知道我们不需要用到空白的或持续时间为0的音节。
 	(Docs: https://pyonfx.readthedocs.io/en/latest/reference/utils.html#pyonfx.utils.Utils.all_non_empty)
 
-In a similiar fashion to what we did in the sub function, we create a leadin and a leadout using fad tag,
-then we create our first main effect by using a simple trasformation, obtaining a grow/shrink effect.
+类似于 sub 函数，我们用 fad 标签制作了淡入淡出的效果，
+然后我们用一个简单的变换构建了第一个主要效果，得到了一个伸长/收缩效果。
 
-Remember to always set the layer for the line. Usually, main effects should have an higher value than leadin and leadout,
-beacuse they are more important, so by doing this they will be drawn over the other effects.
+记住一定要为行设置层数。通常，主要效果应有一个比入场和退场更高的值，
+因为主要效果更重要，所以这样能使这些行显示在其他效果上方。
 
-For the kanji function, you can just notice that it is a lazy CTRL+C and CTRL+V of the romaji function,
-but using chars instead of syls. Try yourself what happens if you use syllables for kanji!
+对于kanji函数，您会发现这就是从 romaji 函数里面复制过来的，
+但是使用的是 char 而不是 syl。请尝试如果 kanji 用 syl 会怎么样！
 """
 
 from pyonfx import *

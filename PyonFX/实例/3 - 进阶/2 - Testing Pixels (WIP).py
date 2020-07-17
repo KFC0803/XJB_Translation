@@ -43,7 +43,7 @@ def romaji(line, l):
 			x2, y2 = x + random.uniform(-off,off), y + random.uniform(-off,off)
 			alpha = "\\alpha" + Convert.coloralpha(pixel['alpha']) if pixel['alpha'] != 255 else ""
 
-			l.text = "{\\p1\\move(%d,%d,%d,%d)%s\\fad(0,%d)}%s" % (x, y, x2, y2, alpha, l.dur/4, p_sh)
+			l.text = "{\\p1\\move(%d,%d,%d,%d)%s\\fad(0,%d)\\c&000000&}%s" % (x, y, x2, y2, alpha, l.dur/4, p_sh)
 			io.write_line(l)
 
 	l.start_time = line.start_time
