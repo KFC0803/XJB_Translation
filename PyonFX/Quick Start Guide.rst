@@ -15,7 +15,7 @@
 Windows
 +++++++
 
-总之，如果您还没**安装Python3**， 您可以从`官网 <https://www.python.org/downloads/>`_ 上 **下载** 。
+总之，如果您还没**安装Python3**， 您可以从 `官网 <https://www.python.org/downloads/>`_ 上 **下载** 。
 请确保勾选“Add Python 3.x to PATH”复选框。这使得您不需要进行额外操作来使Python可以在命令行中被调用。
 
 
