@@ -1,0 +1,1816 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Ass Core &mdash; PyonFX_Simplified_Chinese 0.9.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Convert Functions" href="convert.html" />
+    <link rel="prev" title="The PyonFX Library Reference" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html">
+          
+
+          
+            
+            <img src="../_static/PyonFX Logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../quick start.html">快速入门指南</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">The PyonFX Library Reference</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Ass Core</a></li>
+<li class="toctree-l2"><a class="reference internal" href="convert.html">Convert Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="shape.html">Shape Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="utils.html">Utils</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">PyonFX_Simplified_Chinese</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content style-external-links">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">The PyonFX Library Reference</a> &raquo;</li>
+        
+      <li>Ass Core</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/reference/ass core.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-pyonfx.ass_core">
+<span id="ass-core"></span><span id="ass-core-ref"></span><h1>Ass Core<a class="headerlink" href="#module-pyonfx.ass_core" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="pyonfx.ass_core.Meta">
+<em class="property">class </em><code class="sig-prename descclassname">pyonfx.ass_core.</code><code class="sig-name descname">Meta</code><a class="headerlink" href="#pyonfx.ass_core.Meta" title="Permalink to this definition">¶</a></dt>
+<dd><p>Meta object contains informations about the Ass.</p>
+<p>More info about each of them can be found on <a class="reference external" href="http://docs.aegisub.org/manual/Styles">http://docs.aegisub.org/manual/Styles</a></p>
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Meta.wrap_style">
+<code class="sig-name descname">wrap_style</code><a class="headerlink" href="#pyonfx.ass_core.Meta.wrap_style" title="Permalink to this definition">¶</a></dt>
+<dd><p>Determines how line breaking is applied to the subtitle line</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Meta.scaled_border_and_shadow">
+<code class="sig-name descname">scaled_border_and_shadow</code><a class="headerlink" href="#pyonfx.ass_core.Meta.scaled_border_and_shadow" title="Permalink to this definition">¶</a></dt>
+<dd><p>Determines if it has to be used script resolution (<em>True</em>) or video resolution (<em>False</em>) to scale border and shadow</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Meta.play_res_x">
+<code class="sig-name descname">play_res_x</code><a class="headerlink" href="#pyonfx.ass_core.Meta.play_res_x" title="Permalink to this definition">¶</a></dt>
+<dd><p>Video Width</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Meta.play_res_y">
+<code class="sig-name descname">play_res_y</code><a class="headerlink" href="#pyonfx.ass_core.Meta.play_res_y" title="Permalink to this definition">¶</a></dt>
+<dd><p>Video Height</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Meta.audio">
+<code class="sig-name descname">audio</code><a class="headerlink" href="#pyonfx.ass_core.Meta.audio" title="Permalink to this definition">¶</a></dt>
+<dd><p>Loaded audio path (absolute)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Meta.video">
+<code class="sig-name descname">video</code><a class="headerlink" href="#pyonfx.ass_core.Meta.video" title="Permalink to this definition">¶</a></dt>
+<dd><p>Loaded video path (absolute)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="pyonfx.ass_core.Style">
+<em class="property">class </em><code class="sig-prename descclassname">pyonfx.ass_core.</code><code class="sig-name descname">Style</code><a class="headerlink" href="#pyonfx.ass_core.Style" title="Permalink to this definition">¶</a></dt>
+<dd><p>Style object contains a set of typographic formatting rules that is applied to dialogue lines.</p>
+<p>More info about styles can be found on <a class="reference external" href="http://docs.aegisub.org/3.2/ASS_Tags/">http://docs.aegisub.org/3.2/ASS_Tags/</a>.</p>
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Style.fontname">
+<code class="sig-name descname">fontname</code><a class="headerlink" href="#pyonfx.ass_core.Style.fontname" title="Permalink to this definition">¶</a></dt>
+<dd><p>Font name</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Style.fontsize">
+<code class="sig-name descname">fontsize</code><a class="headerlink" href="#pyonfx.ass_core.Style.fontsize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Font size in points</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Style.color1">
+<code class="sig-name descname">color1</code><a class="headerlink" href="#pyonfx.ass_core.Style.color1" title="Permalink to this definition">¶</a></dt>
+<dd><p>Primary color (fill)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Style.alpha1">
+<code class="sig-name descname">alpha1</code><a class="headerlink" href="#pyonfx.ass_core.Style.alpha1" title="Permalink to this definition">¶</a></dt>
+<dd><p>Trasparency of color1</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Style.color2">
+<code class="sig-name descname">color2</code><a class="headerlink" href="#pyonfx.ass_core.Style.color2" title="Permalink to this definition">¶</a></dt>
+<dd><p>Secondary color (secondary fill, for karaoke effect)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Style.alpha2">
+<code class="sig-name descname">alpha2</code><a class="headerlink" href="#pyonfx.ass_core.Style.alpha2" title="Permalink to this definition">¶</a></dt>
+<dd><p>Trasparency of color2</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Style.color3">
+<code class="sig-name descname">color3</code><a class="headerlink" href="#pyonfx.ass_core.Style.color3" title="Permalink to this definition">¶</a></dt>
+<dd><p>Outline (border) color</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Style.alpha3">
+<code class="sig-name descname">alpha3</code><a class="headerlink" href="#pyonfx.ass_core.Style.alpha3" title="Permalink to this definition">¶</a></dt>
+<dd><p>Trasparency of color3</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Style.color4">
+<code class="sig-name descname">color4</code><a class="headerlink" href="#pyonfx.ass_core.Style.color4" title="Permalink to this definition">¶</a></dt>
+<dd><p>Shadow color</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Style.alpha4">
+<code class="sig-name descname">alpha4</code><a class="headerlink" href="#pyonfx.ass_core.Style.alpha4" title="Permalink to this definition">¶</a></dt>
+<dd><p>Trasparency of color4</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Style.bold">
+<code class="sig-name descname">bold</code><a class="headerlink" href="#pyonfx.ass_core.Style.bold" title="Permalink to this definition">¶</a></dt>
+<dd><p>Font with bold</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Style.italic">
+<code class="sig-name descname">italic</code><a class="headerlink" href="#pyonfx.ass_core.Style.italic" title="Permalink to this definition">¶</a></dt>
+<dd><p>Font with italic</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Style.underline">
+<code class="sig-name descname">underline</code><a class="headerlink" href="#pyonfx.ass_core.Style.underline" title="Permalink to this definition">¶</a></dt>
+<dd><p>Font with underline</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Style.strikeout">
+<code class="sig-name descname">strikeout</code><a class="headerlink" href="#pyonfx.ass_core.Style.strikeout" title="Permalink to this definition">¶</a></dt>
+<dd><p>Font with strikeout</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Style.scale_x">
+<code class="sig-name descname">scale_x</code><a class="headerlink" href="#pyonfx.ass_core.Style.scale_x" title="Permalink to this definition">¶</a></dt>
+<dd><p>Text stretching in the horizontal direction</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Style.scale_y">
+<code class="sig-name descname">scale_y</code><a class="headerlink" href="#pyonfx.ass_core.Style.scale_y" title="Permalink to this definition">¶</a></dt>
+<dd><p>Text stretching in the vertical direction</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Style.spacing">
+<code class="sig-name descname">spacing</code><a class="headerlink" href="#pyonfx.ass_core.Style.spacing" title="Permalink to this definition">¶</a></dt>
+<dd><p>Horizontal spacing between letters</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Style.angle">
+<code class="sig-name descname">angle</code><a class="headerlink" href="#pyonfx.ass_core.Style.angle" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rotation of the text</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Style.border_style">
+<code class="sig-name descname">border_style</code><a class="headerlink" href="#pyonfx.ass_core.Style.border_style" title="Permalink to this definition">¶</a></dt>
+<dd><p><em>True</em> for opaque box, <em>False</em> for standard outline</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Style.outline">
+<code class="sig-name descname">outline</code><a class="headerlink" href="#pyonfx.ass_core.Style.outline" title="Permalink to this definition">¶</a></dt>
+<dd><p>Border thickness value</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Style.shadow">
+<code class="sig-name descname">shadow</code><a class="headerlink" href="#pyonfx.ass_core.Style.shadow" title="Permalink to this definition">¶</a></dt>
+<dd><p>How far downwards and to the right a shadow is drawn</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Style.alignment">
+<code class="sig-name descname">alignment</code><a class="headerlink" href="#pyonfx.ass_core.Style.alignment" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alignment of the text</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Style.margin_l">
+<code class="sig-name descname">margin_l</code><a class="headerlink" href="#pyonfx.ass_core.Style.margin_l" title="Permalink to this definition">¶</a></dt>
+<dd><p>Distance from the left of the video frame</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Style.margin_r">
+<code class="sig-name descname">margin_r</code><a class="headerlink" href="#pyonfx.ass_core.Style.margin_r" title="Permalink to this definition">¶</a></dt>
+<dd><p>Distance from the right of the video frame</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Style.margin_v">
+<code class="sig-name descname">margin_v</code><a class="headerlink" href="#pyonfx.ass_core.Style.margin_v" title="Permalink to this definition">¶</a></dt>
+<dd><p>Distance from the bottom (or top if alignment &gt;= 7) of the video frame</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Style.encoding">
+<code class="sig-name descname">encoding</code><a class="headerlink" href="#pyonfx.ass_core.Style.encoding" title="Permalink to this definition">¶</a></dt>
+<dd><p>Codepage used to map codepoints to glyphs</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="pyonfx.ass_core.Char">
+<em class="property">class </em><code class="sig-prename descclassname">pyonfx.ass_core.</code><code class="sig-name descname">Char</code><a class="headerlink" href="#pyonfx.ass_core.Char" title="Permalink to this definition">¶</a></dt>
+<dd><p>Char object contains informations about a single char of a line in the Ass.</p>
+<p>A char is defined by some text between two karaoke tags (k, ko, kf).</p>
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Char.i">
+<code class="sig-name descname">i</code><a class="headerlink" href="#pyonfx.ass_core.Char.i" title="Permalink to this definition">¶</a></dt>
+<dd><p>Char index number</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Char.word_i">
+<code class="sig-name descname">word_i</code><a class="headerlink" href="#pyonfx.ass_core.Char.word_i" title="Permalink to this definition">¶</a></dt>
+<dd><p>Char word index (e.g.: In line text “Hello PyonFX users!”, letter “u” will have word_i=2).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Char.syl_i">
+<code class="sig-name descname">syl_i</code><a class="headerlink" href="#pyonfx.ass_core.Char.syl_i" title="Permalink to this definition">¶</a></dt>
+<dd><p>Char syl index (e.g.: In line text “{k0}Hel{k0}lo {k0}Pyon{k0}FX {k0}users!”, letter “F” will have syl_i=3).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Char.syl_char_i">
+<code class="sig-name descname">syl_char_i</code><a class="headerlink" href="#pyonfx.ass_core.Char.syl_char_i" title="Permalink to this definition">¶</a></dt>
+<dd><p>Char invidual syl index (e.g.: In line text “{k0}Hel{k0}lo {k0}Pyon{k0}FX {k0}users!”, letter “e” of “users” will have syl_char_i=2).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Char.start_time">
+<code class="sig-name descname">start_time</code><a class="headerlink" href="#pyonfx.ass_core.Char.start_time" title="Permalink to this definition">¶</a></dt>
+<dd><p>Char start time (in milliseconds).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Char.end_time">
+<code class="sig-name descname">end_time</code><a class="headerlink" href="#pyonfx.ass_core.Char.end_time" title="Permalink to this definition">¶</a></dt>
+<dd><p>Char end time (in milliseconds).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Char.duration">
+<code class="sig-name descname">duration</code><a class="headerlink" href="#pyonfx.ass_core.Char.duration" title="Permalink to this definition">¶</a></dt>
+<dd><p>Char duration (in milliseconds).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Char.styleref">
+<code class="sig-name descname">styleref</code><a class="headerlink" href="#pyonfx.ass_core.Char.styleref" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reference to the Style object of this object original line.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>obj</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Char.text">
+<code class="sig-name descname">text</code><a class="headerlink" href="#pyonfx.ass_core.Char.text" title="Permalink to this definition">¶</a></dt>
+<dd><p>Char text.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Char.inline_fx">
+<code class="sig-name descname">inline_fx</code><a class="headerlink" href="#pyonfx.ass_core.Char.inline_fx" title="Permalink to this definition">¶</a></dt>
+<dd><p>Char inline effect (marked as -EFFECT in karaoke-time).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Char.prespace">
+<code class="sig-name descname">prespace</code><a class="headerlink" href="#pyonfx.ass_core.Char.prespace" title="Permalink to this definition">¶</a></dt>
+<dd><p>Char free space before text.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Char.postspace">
+<code class="sig-name descname">postspace</code><a class="headerlink" href="#pyonfx.ass_core.Char.postspace" title="Permalink to this definition">¶</a></dt>
+<dd><p>Char free space after text.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Char.width">
+<code class="sig-name descname">width</code><a class="headerlink" href="#pyonfx.ass_core.Char.width" title="Permalink to this definition">¶</a></dt>
+<dd><p>Char text width.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Char.height">
+<code class="sig-name descname">height</code><a class="headerlink" href="#pyonfx.ass_core.Char.height" title="Permalink to this definition">¶</a></dt>
+<dd><p>Char text height.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Char.x">
+<code class="sig-name descname">x</code><a class="headerlink" href="#pyonfx.ass_core.Char.x" title="Permalink to this definition">¶</a></dt>
+<dd><p>Char text position horizontal (depends on alignment).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Char.y">
+<code class="sig-name descname">y</code><a class="headerlink" href="#pyonfx.ass_core.Char.y" title="Permalink to this definition">¶</a></dt>
+<dd><p>Char text position vertical (depends on alignment).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Char.left">
+<code class="sig-name descname">left</code><a class="headerlink" href="#pyonfx.ass_core.Char.left" title="Permalink to this definition">¶</a></dt>
+<dd><p>Char text position left.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Char.center">
+<code class="sig-name descname">center</code><a class="headerlink" href="#pyonfx.ass_core.Char.center" title="Permalink to this definition">¶</a></dt>
+<dd><p>Char text position center.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Char.right">
+<code class="sig-name descname">right</code><a class="headerlink" href="#pyonfx.ass_core.Char.right" title="Permalink to this definition">¶</a></dt>
+<dd><p>Char text position right.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Char.top">
+<code class="sig-name descname">top</code><a class="headerlink" href="#pyonfx.ass_core.Char.top" title="Permalink to this definition">¶</a></dt>
+<dd><p>Char text position top.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Char.middle">
+<code class="sig-name descname">middle</code><a class="headerlink" href="#pyonfx.ass_core.Char.middle" title="Permalink to this definition">¶</a></dt>
+<dd><p>Char text position middle.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Char.bottom">
+<code class="sig-name descname">bottom</code><a class="headerlink" href="#pyonfx.ass_core.Char.bottom" title="Permalink to this definition">¶</a></dt>
+<dd><p>Char text position bottom.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="pyonfx.ass_core.Syllable">
+<em class="property">class </em><code class="sig-prename descclassname">pyonfx.ass_core.</code><code class="sig-name descname">Syllable</code><a class="headerlink" href="#pyonfx.ass_core.Syllable" title="Permalink to this definition">¶</a></dt>
+<dd><p>Syllable object contains informations about a single syl of a line in the Ass.</p>
+<p>A syl can be defined as some text after a karaoke tag (k, ko, kf)
+(e.g.: In “{k0}Hel{k0}lo {k0}Pyon{k0}FX {k0}users!”, “Pyon” and “FX” are distinct syllables),</p>
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Syllable.i">
+<code class="sig-name descname">i</code><a class="headerlink" href="#pyonfx.ass_core.Syllable.i" title="Permalink to this definition">¶</a></dt>
+<dd><p>Syllable index number</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Syllable.word_i">
+<code class="sig-name descname">word_i</code><a class="headerlink" href="#pyonfx.ass_core.Syllable.word_i" title="Permalink to this definition">¶</a></dt>
+<dd><p>Syllable word index (e.g.: In line text “{k0}Hel{k0}lo {k0}Pyon{k0}FX {k0}users!”, syl “Pyon” will have word_i=1).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Syllable.start_time">
+<code class="sig-name descname">start_time</code><a class="headerlink" href="#pyonfx.ass_core.Syllable.start_time" title="Permalink to this definition">¶</a></dt>
+<dd><p>Syllable start time (in milliseconds).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Syllable.end_time">
+<code class="sig-name descname">end_time</code><a class="headerlink" href="#pyonfx.ass_core.Syllable.end_time" title="Permalink to this definition">¶</a></dt>
+<dd><p>Syllable end time (in milliseconds).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Syllable.duration">
+<code class="sig-name descname">duration</code><a class="headerlink" href="#pyonfx.ass_core.Syllable.duration" title="Permalink to this definition">¶</a></dt>
+<dd><p>Syllable duration (in milliseconds).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Syllable.styleref">
+<code class="sig-name descname">styleref</code><a class="headerlink" href="#pyonfx.ass_core.Syllable.styleref" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reference to the Style object of this object original line.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>obj</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Syllable.text">
+<code class="sig-name descname">text</code><a class="headerlink" href="#pyonfx.ass_core.Syllable.text" title="Permalink to this definition">¶</a></dt>
+<dd><p>Syllable text.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Syllable.tags">
+<code class="sig-name descname">tags</code><a class="headerlink" href="#pyonfx.ass_core.Syllable.tags" title="Permalink to this definition">¶</a></dt>
+<dd><p>All the remaining tags before syl text apart k ones.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Syllable.inline_fx">
+<code class="sig-name descname">inline_fx</code><a class="headerlink" href="#pyonfx.ass_core.Syllable.inline_fx" title="Permalink to this definition">¶</a></dt>
+<dd><p>Syllable inline effect (marked as -EFFECT in karaoke-time).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Syllable.prespace">
+<code class="sig-name descname">prespace</code><a class="headerlink" href="#pyonfx.ass_core.Syllable.prespace" title="Permalink to this definition">¶</a></dt>
+<dd><p>Syllable free space before text.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Syllable.postspace">
+<code class="sig-name descname">postspace</code><a class="headerlink" href="#pyonfx.ass_core.Syllable.postspace" title="Permalink to this definition">¶</a></dt>
+<dd><p>Syllable free space after text.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Syllable.width">
+<code class="sig-name descname">width</code><a class="headerlink" href="#pyonfx.ass_core.Syllable.width" title="Permalink to this definition">¶</a></dt>
+<dd><p>Syllable text width.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Syllable.height">
+<code class="sig-name descname">height</code><a class="headerlink" href="#pyonfx.ass_core.Syllable.height" title="Permalink to this definition">¶</a></dt>
+<dd><p>Syllable text height.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Syllable.x">
+<code class="sig-name descname">x</code><a class="headerlink" href="#pyonfx.ass_core.Syllable.x" title="Permalink to this definition">¶</a></dt>
+<dd><p>Syllable text position horizontal (depends on alignment).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Syllable.y">
+<code class="sig-name descname">y</code><a class="headerlink" href="#pyonfx.ass_core.Syllable.y" title="Permalink to this definition">¶</a></dt>
+<dd><p>Syllable text position vertical (depends on alignment).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Syllable.left">
+<code class="sig-name descname">left</code><a class="headerlink" href="#pyonfx.ass_core.Syllable.left" title="Permalink to this definition">¶</a></dt>
+<dd><p>Syllable text position left.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Syllable.center">
+<code class="sig-name descname">center</code><a class="headerlink" href="#pyonfx.ass_core.Syllable.center" title="Permalink to this definition">¶</a></dt>
+<dd><p>Syllable text position center.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Syllable.right">
+<code class="sig-name descname">right</code><a class="headerlink" href="#pyonfx.ass_core.Syllable.right" title="Permalink to this definition">¶</a></dt>
+<dd><p>Syllable text position right.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Syllable.top">
+<code class="sig-name descname">top</code><a class="headerlink" href="#pyonfx.ass_core.Syllable.top" title="Permalink to this definition">¶</a></dt>
+<dd><p>Syllable text position top.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Syllable.middle">
+<code class="sig-name descname">middle</code><a class="headerlink" href="#pyonfx.ass_core.Syllable.middle" title="Permalink to this definition">¶</a></dt>
+<dd><p>Syllable text position middle.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Syllable.bottom">
+<code class="sig-name descname">bottom</code><a class="headerlink" href="#pyonfx.ass_core.Syllable.bottom" title="Permalink to this definition">¶</a></dt>
+<dd><p>Syllable text position bottom.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="pyonfx.ass_core.Word">
+<em class="property">class </em><code class="sig-prename descclassname">pyonfx.ass_core.</code><code class="sig-name descname">Word</code><a class="headerlink" href="#pyonfx.ass_core.Word" title="Permalink to this definition">¶</a></dt>
+<dd><p>Word object contains informations about a single word of a line in the Ass.</p>
+<p>A word can be defined as some text with some optional space before or after
+(e.g.: In the string “What a beautiful world!”, “beautiful” and “world” are both distinct words).</p>
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Word.i">
+<code class="sig-name descname">i</code><a class="headerlink" href="#pyonfx.ass_core.Word.i" title="Permalink to this definition">¶</a></dt>
+<dd><p>Word index number</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Word.start_time">
+<code class="sig-name descname">start_time</code><a class="headerlink" href="#pyonfx.ass_core.Word.start_time" title="Permalink to this definition">¶</a></dt>
+<dd><p>Word start time (same as line start time) (in milliseconds).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Word.end_time">
+<code class="sig-name descname">end_time</code><a class="headerlink" href="#pyonfx.ass_core.Word.end_time" title="Permalink to this definition">¶</a></dt>
+<dd><p>Word end time (same as line end time) (in milliseconds).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Word.duration">
+<code class="sig-name descname">duration</code><a class="headerlink" href="#pyonfx.ass_core.Word.duration" title="Permalink to this definition">¶</a></dt>
+<dd><p>Word duration (same as line duration) (in milliseconds).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Word.styleref">
+<code class="sig-name descname">styleref</code><a class="headerlink" href="#pyonfx.ass_core.Word.styleref" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reference to the Style object of this object original line.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>obj</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Word.text">
+<code class="sig-name descname">text</code><a class="headerlink" href="#pyonfx.ass_core.Word.text" title="Permalink to this definition">¶</a></dt>
+<dd><p>Word text.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Word.prespace">
+<code class="sig-name descname">prespace</code><a class="headerlink" href="#pyonfx.ass_core.Word.prespace" title="Permalink to this definition">¶</a></dt>
+<dd><p>Word free space before text.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Word.postspace">
+<code class="sig-name descname">postspace</code><a class="headerlink" href="#pyonfx.ass_core.Word.postspace" title="Permalink to this definition">¶</a></dt>
+<dd><p>Word free space after text.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Word.width">
+<code class="sig-name descname">width</code><a class="headerlink" href="#pyonfx.ass_core.Word.width" title="Permalink to this definition">¶</a></dt>
+<dd><p>Word text width.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Word.height">
+<code class="sig-name descname">height</code><a class="headerlink" href="#pyonfx.ass_core.Word.height" title="Permalink to this definition">¶</a></dt>
+<dd><p>Word text height.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Word.x">
+<code class="sig-name descname">x</code><a class="headerlink" href="#pyonfx.ass_core.Word.x" title="Permalink to this definition">¶</a></dt>
+<dd><p>Word text position horizontal (depends on alignment).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Word.y">
+<code class="sig-name descname">y</code><a class="headerlink" href="#pyonfx.ass_core.Word.y" title="Permalink to this definition">¶</a></dt>
+<dd><p>Word text position vertical (depends on alignment).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Word.left">
+<code class="sig-name descname">left</code><a class="headerlink" href="#pyonfx.ass_core.Word.left" title="Permalink to this definition">¶</a></dt>
+<dd><p>Word text position left.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Word.center">
+<code class="sig-name descname">center</code><a class="headerlink" href="#pyonfx.ass_core.Word.center" title="Permalink to this definition">¶</a></dt>
+<dd><p>Word text position center.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Word.right">
+<code class="sig-name descname">right</code><a class="headerlink" href="#pyonfx.ass_core.Word.right" title="Permalink to this definition">¶</a></dt>
+<dd><p>Word text position right.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Word.top">
+<code class="sig-name descname">top</code><a class="headerlink" href="#pyonfx.ass_core.Word.top" title="Permalink to this definition">¶</a></dt>
+<dd><p>Word text position top.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Word.middle">
+<code class="sig-name descname">middle</code><a class="headerlink" href="#pyonfx.ass_core.Word.middle" title="Permalink to this definition">¶</a></dt>
+<dd><p>Word text position middle.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Word.bottom">
+<code class="sig-name descname">bottom</code><a class="headerlink" href="#pyonfx.ass_core.Word.bottom" title="Permalink to this definition">¶</a></dt>
+<dd><p>Word text position bottom.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="pyonfx.ass_core.Line">
+<em class="property">class </em><code class="sig-prename descclassname">pyonfx.ass_core.</code><code class="sig-name descname">Line</code><a class="headerlink" href="#pyonfx.ass_core.Line" title="Permalink to this definition">¶</a></dt>
+<dd><p>Line object contains informations about a single line in the Ass.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>(*) = This field is available only if <a class="reference internal" href="#pyonfx.ass_core.Ass" title="pyonfx.ass_core.Ass"><code class="xref py py-class docutils literal notranslate"><span class="pre">extended</span></code></a> = True</p>
+</div>
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Line.i">
+<code class="sig-name descname">i</code><a class="headerlink" href="#pyonfx.ass_core.Line.i" title="Permalink to this definition">¶</a></dt>
+<dd><p>Line index number</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Line.comment">
+<code class="sig-name descname">comment</code><a class="headerlink" href="#pyonfx.ass_core.Line.comment" title="Permalink to this definition">¶</a></dt>
+<dd><p>If <em>True</em>, this line will not be displayed on the screen.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Line.layer">
+<code class="sig-name descname">layer</code><a class="headerlink" href="#pyonfx.ass_core.Line.layer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Layer for the line. Higher layer numbers are drawn on top of lower ones.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Line.start_time">
+<code class="sig-name descname">start_time</code><a class="headerlink" href="#pyonfx.ass_core.Line.start_time" title="Permalink to this definition">¶</a></dt>
+<dd><p>Line start time (in milliseconds).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Line.end_time">
+<code class="sig-name descname">end_time</code><a class="headerlink" href="#pyonfx.ass_core.Line.end_time" title="Permalink to this definition">¶</a></dt>
+<dd><p>Line end time (in milliseconds).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Line.duration">
+<code class="sig-name descname">duration</code><a class="headerlink" href="#pyonfx.ass_core.Line.duration" title="Permalink to this definition">¶</a></dt>
+<dd><p>Line duration (in milliseconds) (*).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Line.leadin">
+<code class="sig-name descname">leadin</code><a class="headerlink" href="#pyonfx.ass_core.Line.leadin" title="Permalink to this definition">¶</a></dt>
+<dd><p>Time between this line and the previous one (in milliseconds; first line = 1000.1) (*).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Line.leadout">
+<code class="sig-name descname">leadout</code><a class="headerlink" href="#pyonfx.ass_core.Line.leadout" title="Permalink to this definition">¶</a></dt>
+<dd><p>Time between this line and the next one (in milliseconds; first line = 1000.1) (*).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Line.style">
+<code class="sig-name descname">style</code><a class="headerlink" href="#pyonfx.ass_core.Line.style" title="Permalink to this definition">¶</a></dt>
+<dd><p>Style name used for this line.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Line.styleref">
+<code class="sig-name descname">styleref</code><a class="headerlink" href="#pyonfx.ass_core.Line.styleref" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reference to the Style object of this line (*).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>obj</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Line.actor">
+<code class="sig-name descname">actor</code><a class="headerlink" href="#pyonfx.ass_core.Line.actor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Actor field.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Line.margin_l">
+<code class="sig-name descname">margin_l</code><a class="headerlink" href="#pyonfx.ass_core.Line.margin_l" title="Permalink to this definition">¶</a></dt>
+<dd><p>Left margin for this line.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Line.margin_r">
+<code class="sig-name descname">margin_r</code><a class="headerlink" href="#pyonfx.ass_core.Line.margin_r" title="Permalink to this definition">¶</a></dt>
+<dd><p>Right margin for this line.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Line.margin_v">
+<code class="sig-name descname">margin_v</code><a class="headerlink" href="#pyonfx.ass_core.Line.margin_v" title="Permalink to this definition">¶</a></dt>
+<dd><p>Vertical margin for this line.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Line.effect">
+<code class="sig-name descname">effect</code><a class="headerlink" href="#pyonfx.ass_core.Line.effect" title="Permalink to this definition">¶</a></dt>
+<dd><p>Effect field.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Line.raw_text">
+<code class="sig-name descname">raw_text</code><a class="headerlink" href="#pyonfx.ass_core.Line.raw_text" title="Permalink to this definition">¶</a></dt>
+<dd><p>Line raw text.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Line.text">
+<code class="sig-name descname">text</code><a class="headerlink" href="#pyonfx.ass_core.Line.text" title="Permalink to this definition">¶</a></dt>
+<dd><p>Line stripped text (no tags).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Line.width">
+<code class="sig-name descname">width</code><a class="headerlink" href="#pyonfx.ass_core.Line.width" title="Permalink to this definition">¶</a></dt>
+<dd><p>Line text width (*).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Line.height">
+<code class="sig-name descname">height</code><a class="headerlink" href="#pyonfx.ass_core.Line.height" title="Permalink to this definition">¶</a></dt>
+<dd><p>Line text height (*).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Line.ascent">
+<code class="sig-name descname">ascent</code><a class="headerlink" href="#pyonfx.ass_core.Line.ascent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Line font ascent (*).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Line.descent">
+<code class="sig-name descname">descent</code><a class="headerlink" href="#pyonfx.ass_core.Line.descent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Line font descent (*).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Line.internal_leading">
+<code class="sig-name descname">internal_leading</code><a class="headerlink" href="#pyonfx.ass_core.Line.internal_leading" title="Permalink to this definition">¶</a></dt>
+<dd><p>Line font internal lead (*).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Line.external_leading">
+<code class="sig-name descname">external_leading</code><a class="headerlink" href="#pyonfx.ass_core.Line.external_leading" title="Permalink to this definition">¶</a></dt>
+<dd><p>Line font external lead (*).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Line.x">
+<code class="sig-name descname">x</code><a class="headerlink" href="#pyonfx.ass_core.Line.x" title="Permalink to this definition">¶</a></dt>
+<dd><p>Line text position horizontal (depends on alignment) (*).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Line.y">
+<code class="sig-name descname">y</code><a class="headerlink" href="#pyonfx.ass_core.Line.y" title="Permalink to this definition">¶</a></dt>
+<dd><p>Line text position vertical (depends on alignment) (*).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Line.left">
+<code class="sig-name descname">left</code><a class="headerlink" href="#pyonfx.ass_core.Line.left" title="Permalink to this definition">¶</a></dt>
+<dd><p>Line text position left (*).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Line.center">
+<code class="sig-name descname">center</code><a class="headerlink" href="#pyonfx.ass_core.Line.center" title="Permalink to this definition">¶</a></dt>
+<dd><p>Line text position center (*).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Line.right">
+<code class="sig-name descname">right</code><a class="headerlink" href="#pyonfx.ass_core.Line.right" title="Permalink to this definition">¶</a></dt>
+<dd><p>Line text position right (*).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Line.top">
+<code class="sig-name descname">top</code><a class="headerlink" href="#pyonfx.ass_core.Line.top" title="Permalink to this definition">¶</a></dt>
+<dd><p>Line text position top (*).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Line.middle">
+<code class="sig-name descname">middle</code><a class="headerlink" href="#pyonfx.ass_core.Line.middle" title="Permalink to this definition">¶</a></dt>
+<dd><p>Line text position middle (*).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Line.bottom">
+<code class="sig-name descname">bottom</code><a class="headerlink" href="#pyonfx.ass_core.Line.bottom" title="Permalink to this definition">¶</a></dt>
+<dd><p>Line text position bottom (*).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Line.words">
+<code class="sig-name descname">words</code><a class="headerlink" href="#pyonfx.ass_core.Line.words" title="Permalink to this definition">¶</a></dt>
+<dd><p>List containing objects <a class="reference internal" href="#pyonfx.ass_core.Word" title="pyonfx.ass_core.Word"><code class="xref py py-class docutils literal notranslate"><span class="pre">Word</span></code></a> in this line (*).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>list</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Line.syls">
+<code class="sig-name descname">syls</code><a class="headerlink" href="#pyonfx.ass_core.Line.syls" title="Permalink to this definition">¶</a></dt>
+<dd><p>List containing objects <a class="reference internal" href="#pyonfx.ass_core.Syllable" title="pyonfx.ass_core.Syllable"><code class="xref py py-class docutils literal notranslate"><span class="pre">Syllable</span></code></a> in this line (if available) (*).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>list</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Line.chars">
+<code class="sig-name descname">chars</code><a class="headerlink" href="#pyonfx.ass_core.Line.chars" title="Permalink to this definition">¶</a></dt>
+<dd><p>List containing objects <a class="reference internal" href="#pyonfx.ass_core.Char" title="pyonfx.ass_core.Char"><code class="xref py py-class docutils literal notranslate"><span class="pre">Char</span></code></a> in this line (*).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>list</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyonfx.ass_core.Line.copy">
+<code class="sig-name descname">copy</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyonfx.ass_core.Line.copy" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>A deep copy of this object (line)</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="pyonfx.ass_core.Ass">
+<em class="property">class </em><code class="sig-prename descclassname">pyonfx.ass_core.</code><code class="sig-name descname">Ass</code><span class="sig-paren">(</span><em class="sig-param">path_input=''</em>, <em class="sig-param">path_output='Output.ass'</em>, <em class="sig-param">keep_original=True</em>, <em class="sig-param">extended=True</em>, <em class="sig-param">vertical_kanji=True</em><span class="sig-paren">)</span><a class="headerlink" href="#pyonfx.ass_core.Ass" title="Permalink to this definition">¶</a></dt>
+<dd><p>Contains all the informations about a file in the ASS format and the methods to work with it for both input and output.</p>
+<div class="line-block">
+<div class="line">Usually you will create an Ass object and use it for input and output (see <a class="reference internal" href="#example">example</a> section).</div>
+<div class="line">PyonFX set automatically an absolute path for all the info in the output, so that wherever you will
+put your generated file, it should always load correctly video and audio.</div>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>path_input</strong> (<em>str</em>) – Path for the input file (either relative to your .py file or absolute).</p></li>
+<li><p><strong>path_output</strong> (<em>str</em>) – Path for the output file (either relative to your .py file or absolute) (DEFAULT: “Output.ass”).</p></li>
+<li><p><strong>keep_original</strong> (<em>bool</em>) – If True, you will find all the lines of the input file commented before the new lines generated.</p></li>
+<li><p><strong>extended</strong> (<em>bool</em>) – Calculate more informations from lines (usually you will not have to touch this).</p></li>
+<li><p><strong>vertical_kanji</strong> (<em>bool</em>) – If True, line text with alignment 4, 5 or 6 will be positioned vertically.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Ass.path_input">
+<code class="sig-name descname">path_input</code><a class="headerlink" href="#pyonfx.ass_core.Ass.path_input" title="Permalink to this definition">¶</a></dt>
+<dd><p>Path for input file (absolute).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Ass.path_output">
+<code class="sig-name descname">path_output</code><a class="headerlink" href="#pyonfx.ass_core.Ass.path_output" title="Permalink to this definition">¶</a></dt>
+<dd><p>Path for output file (absolute).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Ass.meta">
+<code class="sig-name descname">meta</code><a class="headerlink" href="#pyonfx.ass_core.Ass.meta" title="Permalink to this definition">¶</a></dt>
+<dd><p>Contains informations about the ASS given.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="#pyonfx.ass_core.Meta" title="pyonfx.ass_core.Meta"><code class="xref py py-class docutils literal notranslate"><span class="pre">Meta</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Ass.styles">
+<code class="sig-name descname">styles</code><a class="headerlink" href="#pyonfx.ass_core.Ass.styles" title="Permalink to this definition">¶</a></dt>
+<dd><p>Contains all the styles in the ASS given.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>list of <a class="reference internal" href="#pyonfx.ass_core.Style" title="pyonfx.ass_core.Style"><code class="xref py py-class docutils literal notranslate"><span class="pre">Style</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyonfx.ass_core.Ass.lines">
+<code class="sig-name descname">lines</code><a class="headerlink" href="#pyonfx.ass_core.Ass.lines" title="Permalink to this definition">¶</a></dt>
+<dd><p>Contains all the lines (events) in the ASS given.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>list of <a class="reference internal" href="#pyonfx.ass_core.Line" title="pyonfx.ass_core.Line"><code class="xref py py-class docutils literal notranslate"><span class="pre">Line</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<div class="admonition-example admonition" id="example">
+<p class="admonition-title">Example</p>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">io</span> <span class="o">=</span> <span class="n">Ass</span><span class="p">(</span><span class="s2">&quot;in.ass&quot;</span><span class="p">)</span>
+<span class="n">meta</span><span class="p">,</span> <span class="n">styles</span><span class="p">,</span> <span class="n">lines</span> <span class="o">=</span> <span class="n">io</span><span class="o">.</span><span class="n">get_data</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<dl class="method">
+<dt id="pyonfx.ass_core.Ass.get_data">
+<code class="sig-name descname">get_data</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyonfx.ass_core.Ass.get_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Utility function to retrieve easily meta styles and lines.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p><a class="reference internal" href="#pyonfx.ass_core.Ass.meta" title="pyonfx.ass_core.Ass.meta"><code class="xref py py-attr docutils literal notranslate"><span class="pre">meta</span></code></a>, <a class="reference internal" href="#pyonfx.ass_core.Ass.styles" title="pyonfx.ass_core.Ass.styles"><code class="xref py py-attr docutils literal notranslate"><span class="pre">styles</span></code></a> and <a class="reference internal" href="#pyonfx.ass_core.Ass.lines" title="pyonfx.ass_core.Ass.lines"><code class="xref py py-attr docutils literal notranslate"><span class="pre">lines</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyonfx.ass_core.Ass.write_line">
+<code class="sig-name descname">write_line</code><span class="sig-paren">(</span><em class="sig-param">line</em><span class="sig-paren">)</span><a class="headerlink" href="#pyonfx.ass_core.Ass.write_line" title="Permalink to this definition">¶</a></dt>
+<dd><p>Appends a line to the output list (which is private) that later on will be written to the output file when calling save().</p>
+<p>Use it whenever you’ve prepared a line, it will not impact performance since you
+will not actually write anything until <a class="reference internal" href="#pyonfx.ass_core.Ass.save" title="pyonfx.ass_core.Ass.save"><code class="xref py py-func docutils literal notranslate"><span class="pre">save()</span></code></a> will be called.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>line</strong> (<a class="reference internal" href="#pyonfx.ass_core.Line" title="pyonfx.ass_core.Line"><code class="xref py py-class docutils literal notranslate"><span class="pre">Line</span></code></a>) – A line object. If not valid, TypeError is raised.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyonfx.ass_core.Ass.save">
+<code class="sig-name descname">save</code><span class="sig-paren">(</span><em class="sig-param">quiet=False</em><span class="sig-paren">)</span><a class="headerlink" href="#pyonfx.ass_core.Ass.save" title="Permalink to this definition">¶</a></dt>
+<dd><p>Write everything inside the private output list to a file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>quiet</strong> (<em>bool</em>) – If True, you will not get printed any message.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyonfx.ass_core.Ass.open_aegisub">
+<code class="sig-name descname">open_aegisub</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyonfx.ass_core.Ass.open_aegisub" title="Permalink to this definition">¶</a></dt>
+<dd><p>Open the output (specified in self.path_output) with Aegisub.</p>
+<p>This can be usefull if you don’t have MPV installed or you want to look at your output in detailed.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>0 if success, -1 if the output couldn’t be opened.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyonfx.ass_core.Ass.open_mpv">
+<code class="sig-name descname">open_mpv</code><span class="sig-paren">(</span><em class="sig-param">video_path=''</em>, <em class="sig-param">video_start=''</em>, <em class="sig-param">full_screen=False</em><span class="sig-paren">)</span><a class="headerlink" href="#pyonfx.ass_core.Ass.open_mpv" title="Permalink to this definition">¶</a></dt>
+<dd><p>Open the output (specified in self.path_output) in softsub with the MPV player.
+To utilize this function, MPV player is required. Additionally if you’re on Windows, MPV must be in the PATH (check <a class="reference external" href="https://pyonfx.readthedocs.io/en/latest/quick%20start.html#installation-extra-step">https://pyonfx.readthedocs.io/en/latest/quick%20start.html#installation-extra-step</a>).</p>
+<p>This is one of the fastest way to reproduce your output in a comfortable way.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>video_path</strong> (<em>string</em>) – The video file path (absolute) to reproduce. If not specified, <strong>meta.video</strong> is automatically taken.</p></li>
+<li><p><strong>video_start</strong> (<em>string</em>) – The start time for the video (more info: <a class="reference external" href="https://mpv.io/manual/master/#options-start">https://mpv.io/manual/master/#options-start</a>). If not specified, 0 is automatically taken.</p></li>
+<li><p><strong>full_screen</strong> (<em>bool</em>) – If True, it will reproduce the output in full screen. If not specified, False is automatically taken.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="convert.html" class="btn btn-neutral float-right" title="Convert Functions" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral float-left" title="The PyonFX Library Reference" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Antonio Strippoli
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
