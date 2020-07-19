@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Ass Core &mdash; PyonFX_Simplified_Chinese 0.9.0 documentation</title>
+  <title>Ass Core &mdash; PyonFX 0.9.2 documentation</title>
   
 
   
@@ -36,7 +36,7 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Convert Functions" href="convert.html" />
-    <link rel="prev" title="The PyonFX Library Reference" href="index.html" /> 
+    <link rel="prev" title="PyonFX库参考" href="index.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -85,7 +85,7 @@
             
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../quick start.html">快速入门指南</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="index.html">The PyonFX Library Reference</a><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">PyonFX库参考</a><ul class="current">
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Ass Core</a></li>
 <li class="toctree-l2"><a class="reference internal" href="convert.html">Convert Functions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="shape.html">Shape Functions</a></li>
@@ -106,7 +106,7 @@
       <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../index.html">PyonFX_Simplified_Chinese</a>
+          <a href="../index.html">PyonFX</a>
         
       </nav>
 
@@ -137,7 +137,7 @@
     
       <li><a href="../index.html">Docs</a> &raquo;</li>
         
-          <li><a href="index.html">The PyonFX Library Reference</a> &raquo;</li>
+          <li><a href="index.html">PyonFX库参考</a> &raquo;</li>
         
       <li>Ass Core</li>
     
@@ -163,12 +163,12 @@
 <dl class="class">
 <dt id="pyonfx.ass_core.Meta">
 <em class="property">class </em><code class="sig-prename descclassname">pyonfx.ass_core.</code><code class="sig-name descname">Meta</code><a class="headerlink" href="#pyonfx.ass_core.Meta" title="Permalink to this definition">¶</a></dt>
-<dd><p>Meta object contains informations about the Ass.</p>
-<p>More info about each of them can be found on <a class="reference external" href="http://docs.aegisub.org/manual/Styles">http://docs.aegisub.org/manual/Styles</a></p>
+<dd><p>Meta对象包含了Ass的信息。</p>
+<p>可以在此获取它们的更多信息: <a class="reference external" href="https://aegi.vmoe.info/docs/3.2/Styles/">https://aegi.vmoe.info/docs/3.2/Styles/</a> 。</p>
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Meta.wrap_style">
 <code class="sig-name descname">wrap_style</code><a class="headerlink" href="#pyonfx.ass_core.Meta.wrap_style" title="Permalink to this definition">¶</a></dt>
-<dd><p>Determines how line breaking is applied to the subtitle line</p>
+<dd><p>决定字幕行如何换行。</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>int</p>
@@ -179,7 +179,7 @@
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Meta.scaled_border_and_shadow">
 <code class="sig-name descname">scaled_border_and_shadow</code><a class="headerlink" href="#pyonfx.ass_core.Meta.scaled_border_and_shadow" title="Permalink to this definition">¶</a></dt>
-<dd><p>Determines if it has to be used script resolution (<em>True</em>) or video resolution (<em>False</em>) to scale border and shadow</p>
+<dd><p>确定是否使用脚本分辨率(<em>True</em>)或视频分辨率(<em>False</em>)来缩放边框和阴影。</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>bool</p>
@@ -190,7 +190,7 @@
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Meta.play_res_x">
 <code class="sig-name descname">play_res_x</code><a class="headerlink" href="#pyonfx.ass_core.Meta.play_res_x" title="Permalink to this definition">¶</a></dt>
-<dd><p>Video Width</p>
+<dd><p>视频宽度。</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>int</p>
@@ -201,7 +201,7 @@
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Meta.play_res_y">
 <code class="sig-name descname">play_res_y</code><a class="headerlink" href="#pyonfx.ass_core.Meta.play_res_y" title="Permalink to this definition">¶</a></dt>
-<dd><p>Video Height</p>
+<dd><p>视频高度。</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>int</p>
@@ -212,7 +212,7 @@
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Meta.audio">
 <code class="sig-name descname">audio</code><a class="headerlink" href="#pyonfx.ass_core.Meta.audio" title="Permalink to this definition">¶</a></dt>
-<dd><p>Loaded audio path (absolute)</p>
+<dd><p>加载的音频的绝对路径。</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>str</p>
@@ -223,7 +223,7 @@
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Meta.video">
 <code class="sig-name descname">video</code><a class="headerlink" href="#pyonfx.ass_core.Meta.video" title="Permalink to this definition">¶</a></dt>
-<dd><p>Loaded video path (absolute)</p>
+<dd><p>加载的视频的绝对路径。</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>str</p>
@@ -236,12 +236,12 @@
 <dl class="class">
 <dt id="pyonfx.ass_core.Style">
 <em class="property">class </em><code class="sig-prename descclassname">pyonfx.ass_core.</code><code class="sig-name descname">Style</code><a class="headerlink" href="#pyonfx.ass_core.Style" title="Permalink to this definition">¶</a></dt>
-<dd><p>Style object contains a set of typographic formatting rules that is applied to dialogue lines.</p>
-<p>More info about styles can be found on <a class="reference external" href="http://docs.aegisub.org/3.2/ASS_Tags/">http://docs.aegisub.org/3.2/ASS_Tags/</a>.</p>
+<dd><p>Style对象包含一组应用于对话行的排版格式规则。</p>
+<p>可以在此获取样式的更多信息: <a class="reference external" href="https://aegi.vmoe.info/docs/3.2/ASS_Tags/">https://aegi.vmoe.info/docs/3.2/ASS_Tags/</a> 。</p>
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Style.fontname">
 <code class="sig-name descname">fontname</code><a class="headerlink" href="#pyonfx.ass_core.Style.fontname" title="Permalink to this definition">¶</a></dt>
-<dd><p>Font name</p>
+<dd><p>字体名</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>str</p>
@@ -252,7 +252,7 @@
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Style.fontsize">
 <code class="sig-name descname">fontsize</code><a class="headerlink" href="#pyonfx.ass_core.Style.fontsize" title="Permalink to this definition">¶</a></dt>
-<dd><p>Font size in points</p>
+<dd><p>字体大小（点数）</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>float</p>
@@ -263,7 +263,7 @@
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Style.color1">
 <code class="sig-name descname">color1</code><a class="headerlink" href="#pyonfx.ass_core.Style.color1" title="Permalink to this definition">¶</a></dt>
-<dd><p>Primary color (fill)</p>
+<dd><p>主要颜色</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>str</p>
@@ -274,7 +274,7 @@
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Style.alpha1">
 <code class="sig-name descname">alpha1</code><a class="headerlink" href="#pyonfx.ass_core.Style.alpha1" title="Permalink to this definition">¶</a></dt>
-<dd><p>Trasparency of color1</p>
+<dd><p>主要颜色的透明度</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>str</p>
@@ -285,7 +285,7 @@
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Style.color2">
 <code class="sig-name descname">color2</code><a class="headerlink" href="#pyonfx.ass_core.Style.color2" title="Permalink to this definition">¶</a></dt>
-<dd><p>Secondary color (secondary fill, for karaoke effect)</p>
+<dd><p>次要颜色（用于kalaoke效果）</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>str</p>
@@ -296,7 +296,7 @@
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Style.alpha2">
 <code class="sig-name descname">alpha2</code><a class="headerlink" href="#pyonfx.ass_core.Style.alpha2" title="Permalink to this definition">¶</a></dt>
-<dd><p>Trasparency of color2</p>
+<dd><p>次要颜色的透明度</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>str</p>
@@ -307,7 +307,7 @@
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Style.color3">
 <code class="sig-name descname">color3</code><a class="headerlink" href="#pyonfx.ass_core.Style.color3" title="Permalink to this definition">¶</a></dt>
-<dd><p>Outline (border) color</p>
+<dd><p>边框颜色</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>str</p>
@@ -318,7 +318,7 @@
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Style.alpha3">
 <code class="sig-name descname">alpha3</code><a class="headerlink" href="#pyonfx.ass_core.Style.alpha3" title="Permalink to this definition">¶</a></dt>
-<dd><p>Trasparency of color3</p>
+<dd><p>边框颜色的透明度</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>str</p>
@@ -329,7 +329,7 @@
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Style.color4">
 <code class="sig-name descname">color4</code><a class="headerlink" href="#pyonfx.ass_core.Style.color4" title="Permalink to this definition">¶</a></dt>
-<dd><p>Shadow color</p>
+<dd><p>阴影颜色</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>str</p>
@@ -340,7 +340,7 @@
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Style.alpha4">
 <code class="sig-name descname">alpha4</code><a class="headerlink" href="#pyonfx.ass_core.Style.alpha4" title="Permalink to this definition">¶</a></dt>
-<dd><p>Trasparency of color4</p>
+<dd><p>阴影颜色的透明度</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>str</p>
@@ -351,7 +351,7 @@
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Style.bold">
 <code class="sig-name descname">bold</code><a class="headerlink" href="#pyonfx.ass_core.Style.bold" title="Permalink to this definition">¶</a></dt>
-<dd><p>Font with bold</p>
+<dd><p>字体是否加粗</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>bool</p>
@@ -362,7 +362,7 @@
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Style.italic">
 <code class="sig-name descname">italic</code><a class="headerlink" href="#pyonfx.ass_core.Style.italic" title="Permalink to this definition">¶</a></dt>
-<dd><p>Font with italic</p>
+<dd><p>字体是否为斜体</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>bool</p>
@@ -373,7 +373,7 @@
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Style.underline">
 <code class="sig-name descname">underline</code><a class="headerlink" href="#pyonfx.ass_core.Style.underline" title="Permalink to this definition">¶</a></dt>
-<dd><p>Font with underline</p>
+<dd><p>字体是否有下划线</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>bool</p>
@@ -384,7 +384,7 @@
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Style.strikeout">
 <code class="sig-name descname">strikeout</code><a class="headerlink" href="#pyonfx.ass_core.Style.strikeout" title="Permalink to this definition">¶</a></dt>
-<dd><p>Font with strikeout</p>
+<dd><p>字体是否有删除线</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>bool</p>
@@ -395,7 +395,7 @@
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Style.scale_x">
 <code class="sig-name descname">scale_x</code><a class="headerlink" href="#pyonfx.ass_core.Style.scale_x" title="Permalink to this definition">¶</a></dt>
-<dd><p>Text stretching in the horizontal direction</p>
+<dd><p>文本水平缩放</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>float</p>
@@ -406,7 +406,7 @@
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Style.scale_y">
 <code class="sig-name descname">scale_y</code><a class="headerlink" href="#pyonfx.ass_core.Style.scale_y" title="Permalink to this definition">¶</a></dt>
-<dd><p>Text stretching in the vertical direction</p>
+<dd><p>文本垂直缩放</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>float</p>
@@ -417,7 +417,7 @@
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Style.spacing">
 <code class="sig-name descname">spacing</code><a class="headerlink" href="#pyonfx.ass_core.Style.spacing" title="Permalink to this definition">¶</a></dt>
-<dd><p>Horizontal spacing between letters</p>
+<dd><p>字间距</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>float</p>
@@ -428,7 +428,7 @@
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Style.angle">
 <code class="sig-name descname">angle</code><a class="headerlink" href="#pyonfx.ass_core.Style.angle" title="Permalink to this definition">¶</a></dt>
-<dd><p>Rotation of the text</p>
+<dd><p>旋转角度</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>float</p>
@@ -439,7 +439,7 @@
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Style.border_style">
 <code class="sig-name descname">border_style</code><a class="headerlink" href="#pyonfx.ass_core.Style.border_style" title="Permalink to this definition">¶</a></dt>
-<dd><p><em>True</em> for opaque box, <em>False</em> for standard outline</p>
+<dd><p>是否是不透明背景</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>bool</p>
@@ -450,7 +450,7 @@
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Style.outline">
 <code class="sig-name descname">outline</code><a class="headerlink" href="#pyonfx.ass_core.Style.outline" title="Permalink to this definition">¶</a></dt>
-<dd><p>Border thickness value</p>
+<dd><p>边框厚度</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>float</p>
@@ -461,7 +461,7 @@
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Style.shadow">
 <code class="sig-name descname">shadow</code><a class="headerlink" href="#pyonfx.ass_core.Style.shadow" title="Permalink to this definition">¶</a></dt>
-<dd><p>How far downwards and to the right a shadow is drawn</p>
+<dd><p>阴影距离</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>float</p>
@@ -472,7 +472,7 @@
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Style.alignment">
 <code class="sig-name descname">alignment</code><a class="headerlink" href="#pyonfx.ass_core.Style.alignment" title="Permalink to this definition">¶</a></dt>
-<dd><p>Alignment of the text</p>
+<dd><p>对齐方式</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>int</p>
@@ -483,7 +483,7 @@
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Style.margin_l">
 <code class="sig-name descname">margin_l</code><a class="headerlink" href="#pyonfx.ass_core.Style.margin_l" title="Permalink to this definition">¶</a></dt>
-<dd><p>Distance from the left of the video frame</p>
+<dd><p>左边框距离</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>int</p>
@@ -494,7 +494,7 @@
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Style.margin_r">
 <code class="sig-name descname">margin_r</code><a class="headerlink" href="#pyonfx.ass_core.Style.margin_r" title="Permalink to this definition">¶</a></dt>
-<dd><p>Distance from the right of the video frame</p>
+<dd><p>右边框距离</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>int</p>
@@ -505,7 +505,7 @@
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Style.margin_v">
 <code class="sig-name descname">margin_v</code><a class="headerlink" href="#pyonfx.ass_core.Style.margin_v" title="Permalink to this definition">¶</a></dt>
-<dd><p>Distance from the bottom (or top if alignment &gt;= 7) of the video frame</p>
+<dd><p>垂直边框距离</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>int</p>
@@ -516,7 +516,7 @@
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Style.encoding">
 <code class="sig-name descname">encoding</code><a class="headerlink" href="#pyonfx.ass_core.Style.encoding" title="Permalink to this definition">¶</a></dt>
-<dd><p>Codepage used to map codepoints to glyphs</p>
+<dd><p>字符编码</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>int</p>
@@ -529,12 +529,12 @@
 <dl class="class">
 <dt id="pyonfx.ass_core.Char">
 <em class="property">class </em><code class="sig-prename descclassname">pyonfx.ass_core.</code><code class="sig-name descname">Char</code><a class="headerlink" href="#pyonfx.ass_core.Char" title="Permalink to this definition">¶</a></dt>
-<dd><p>Char object contains informations about a single char of a line in the Ass.</p>
-<p>A char is defined by some text between two karaoke tags (k, ko, kf).</p>
+<dd><p>Char对象包含了Ass中一行的单个字符的信息。</p>
+<p>一个char可以是karaoke标签 (k, ko, kf) 间的一些文本。</p>
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Char.i">
 <code class="sig-name descname">i</code><a class="headerlink" href="#pyonfx.ass_core.Char.i" title="Permalink to this definition">¶</a></dt>
-<dd><p>Char index number</p>
+<dd><p>字符的索引值</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>int</p>
@@ -545,7 +545,7 @@
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Char.word_i">
 <code class="sig-name descname">word_i</code><a class="headerlink" href="#pyonfx.ass_core.Char.word_i" title="Permalink to this definition">¶</a></dt>
-<dd><p>Char word index (e.g.: In line text “Hello PyonFX users!”, letter “u” will have word_i=2).</p>
+<dd><p>字符所在的单词的索引值 (e.g.: 在文本 <code class="docutils literal notranslate"><span class="pre">Hello</span> <span class="pre">PyonFX</span> <span class="pre">users!</span></code> 中，字母 “u” 的 word_i=2)。</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>int</p>
@@ -556,7 +556,7 @@
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Char.syl_i">
 <code class="sig-name descname">syl_i</code><a class="headerlink" href="#pyonfx.ass_core.Char.syl_i" title="Permalink to this definition">¶</a></dt>
-<dd><p>Char syl index (e.g.: In line text “{k0}Hel{k0}lo {k0}Pyon{k0}FX {k0}users!”, letter “F” will have syl_i=3).</p>
+<dd><p>字符所在的音节的索引值 (e.g.: 在文本 <code class="docutils literal notranslate"><span class="pre">{\k0}Hel{\k0}lo</span> <span class="pre">{\k0}Pyon{\k0}FX</span> <span class="pre">{\k0}users!</span></code> 中，字母 “F” 的 syl_i=3)。</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>int</p>
@@ -567,7 +567,7 @@
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Char.syl_char_i">
 <code class="sig-name descname">syl_char_i</code><a class="headerlink" href="#pyonfx.ass_core.Char.syl_char_i" title="Permalink to this definition">¶</a></dt>
-<dd><p>Char invidual syl index (e.g.: In line text “{k0}Hel{k0}lo {k0}Pyon{k0}FX {k0}users!”, letter “e” of “users” will have syl_char_i=2).</p>
+<dd><p>字符在所在音节中的索引值 (e.g.: 在文本 <code class="docutils literal notranslate"><span class="pre">{\k0}Hel{\k0}lo</span> <span class="pre">{\k0}Pyon{\k0}FX</span> <span class="pre">{\k0}users!</span></code> 中，”users” 中的字母 “e” 的 syl_char_i=2)。</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>int</p>
@@ -578,7 +578,7 @@
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Char.start_time">
 <code class="sig-name descname">start_time</code><a class="headerlink" href="#pyonfx.ass_core.Char.start_time" title="Permalink to this definition">¶</a></dt>
-<dd><p>Char start time (in milliseconds).</p>
+<dd><p>字符开始时间（毫秒）</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>int</p>
@@ -589,7 +589,7 @@
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Char.end_time">
 <code class="sig-name descname">end_time</code><a class="headerlink" href="#pyonfx.ass_core.Char.end_time" title="Permalink to this definition">¶</a></dt>
-<dd><p>Char end time (in milliseconds).</p>
+<dd><p>字符结束时间（毫秒）</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>int</p>
@@ -600,7 +600,7 @@
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Char.duration">
 <code class="sig-name descname">duration</code><a class="headerlink" href="#pyonfx.ass_core.Char.duration" title="Permalink to this definition">¶</a></dt>
-<dd><p>Char duration (in milliseconds).</p>
+<dd><p>字符持续时间（毫秒）</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>int</p>
@@ -611,7 +611,7 @@
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Char.styleref">
 <code class="sig-name descname">styleref</code><a class="headerlink" href="#pyonfx.ass_core.Char.styleref" title="Permalink to this definition">¶</a></dt>
-<dd><p>Reference to the Style object of this object original line.</p>
+<dd><p>此对象原始行的Style对象的引用。</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>obj</p>
@@ -622,7 +622,7 @@
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Char.text">
 <code class="sig-name descname">text</code><a class="headerlink" href="#pyonfx.ass_core.Char.text" title="Permalink to this definition">¶</a></dt>
-<dd><p>Char text.</p>
+<dd><p>字符文本。</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>str</p>
@@ -633,7 +633,7 @@
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Char.inline_fx">
 <code class="sig-name descname">inline_fx</code><a class="headerlink" href="#pyonfx.ass_core.Char.inline_fx" title="Permalink to this definition">¶</a></dt>
-<dd><p>Char inline effect (marked as -EFFECT in karaoke-time).</p>
+<dd><p>字符内联特效 (在K值后使用 -特效名)。</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>str</p>
@@ -644,7 +644,7 @@
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Char.prespace">
 <code class="sig-name descname">prespace</code><a class="headerlink" href="#pyonfx.ass_core.Char.prespace" title="Permalink to this definition">¶</a></dt>
-<dd><p>Char free space before text.</p>
+<dd><p>文本之前的字符空白空间。</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>int</p>
@@ -655,7 +655,7 @@
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Char.postspace">
 <code class="sig-name descname">postspace</code><a class="headerlink" href="#pyonfx.ass_core.Char.postspace" title="Permalink to this definition">¶</a></dt>
-<dd><p>Char free space after text.</p>
+<dd><p>文本之后的字符空白空间。</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>int</p>
@@ -666,7 +666,7 @@
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Char.width">
 <code class="sig-name descname">width</code><a class="headerlink" href="#pyonfx.ass_core.Char.width" title="Permalink to this definition">¶</a></dt>
-<dd><p>Char text width.</p>
+<dd><p>字符文本宽度。</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>float</p>
@@ -677,7 +677,7 @@
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Char.height">
 <code class="sig-name descname">height</code><a class="headerlink" href="#pyonfx.ass_core.Char.height" title="Permalink to this definition">¶</a></dt>
-<dd><p>Char text height.</p>
+<dd><p>字符文本高度。</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>float</p>
@@ -688,7 +688,7 @@
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Char.x">
 <code class="sig-name descname">x</code><a class="headerlink" href="#pyonfx.ass_core.Char.x" title="Permalink to this definition">¶</a></dt>
-<dd><p>Char text position horizontal (depends on alignment).</p>
+<dd><p>字符水平坐标（取决于对齐方式）。</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>float</p>
@@ -699,7 +699,7 @@
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Char.y">
 <code class="sig-name descname">y</code><a class="headerlink" href="#pyonfx.ass_core.Char.y" title="Permalink to this definition">¶</a></dt>
-<dd><p>Char text position vertical (depends on alignment).</p>
+<dd><p>字符垂直坐标（取决于对齐方式）。</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>float</p>
@@ -710,7 +710,7 @@
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Char.left">
 <code class="sig-name descname">left</code><a class="headerlink" href="#pyonfx.ass_core.Char.left" title="Permalink to this definition">¶</a></dt>
-<dd><p>Char text position left.</p>
+<dd><p>字符左侧横坐标。</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>float</p>
@@ -721,7 +721,7 @@
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Char.center">
 <code class="sig-name descname">center</code><a class="headerlink" href="#pyonfx.ass_core.Char.center" title="Permalink to this definition">¶</a></dt>
-<dd><p>Char text position center.</p>
+<dd><p>字符中心横坐标。</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>float</p>
@@ -732,7 +732,7 @@
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Char.right">
 <code class="sig-name descname">right</code><a class="headerlink" href="#pyonfx.ass_core.Char.right" title="Permalink to this definition">¶</a></dt>
-<dd><p>Char text position right.</p>
+<dd><p>字符右侧横坐标。</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>float</p>
@@ -743,7 +743,7 @@
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Char.top">
 <code class="sig-name descname">top</code><a class="headerlink" href="#pyonfx.ass_core.Char.top" title="Permalink to this definition">¶</a></dt>
-<dd><p>Char text position top.</p>
+<dd><p>字符顶部纵坐标。</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>float</p>
@@ -754,7 +754,7 @@
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Char.middle">
 <code class="sig-name descname">middle</code><a class="headerlink" href="#pyonfx.ass_core.Char.middle" title="Permalink to this definition">¶</a></dt>
-<dd><p>Char text position middle.</p>
+<dd><p>字符中心纵坐标。</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>float</p>
@@ -765,7 +765,7 @@
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Char.bottom">
 <code class="sig-name descname">bottom</code><a class="headerlink" href="#pyonfx.ass_core.Char.bottom" title="Permalink to this definition">¶</a></dt>
-<dd><p>Char text position bottom.</p>
+<dd><p>字符底部纵坐标。</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>float</p>
@@ -778,13 +778,13 @@
 <dl class="class">
 <dt id="pyonfx.ass_core.Syllable">
 <em class="property">class </em><code class="sig-prename descclassname">pyonfx.ass_core.</code><code class="sig-name descname">Syllable</code><a class="headerlink" href="#pyonfx.ass_core.Syllable" title="Permalink to this definition">¶</a></dt>
-<dd><p>Syllable object contains informations about a single syl of a line in the Ass.</p>
-<p>A syl can be defined as some text after a karaoke tag (k, ko, kf)
-(e.g.: In “{k0}Hel{k0}lo {k0}Pyon{k0}FX {k0}users!”, “Pyon” and “FX” are distinct syllables),</p>
+<dd><p>Syllable对象包含了Ass中一行的单个音节的信息。</p>
+<p>一个syl可以是karaoke标签 (k, ko, kf) 后的一些文本。
+(e.g.: 在 <code class="docutils literal notranslate"><span class="pre">{\k0}Hel{\k0}lo</span> <span class="pre">{\k0}Pyon{\k0}FX</span> <span class="pre">{\k0}users!</span></code> 中，”Pyon” 和 “FX” 是两个不同的音节)，</p>
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Syllable.i">
 <code class="sig-name descname">i</code><a class="headerlink" href="#pyonfx.ass_core.Syllable.i" title="Permalink to this definition">¶</a></dt>
-<dd><p>Syllable index number</p>
+<dd><p>音节索引值。</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>int</p>
@@ -795,7 +795,7 @@
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Syllable.word_i">
 <code class="sig-name descname">word_i</code><a class="headerlink" href="#pyonfx.ass_core.Syllable.word_i" title="Permalink to this definition">¶</a></dt>
-<dd><p>Syllable word index (e.g.: In line text “{k0}Hel{k0}lo {k0}Pyon{k0}FX {k0}users!”, syl “Pyon” will have word_i=1).</p>
+<dd><p>音节单词索引值 (e.g.: 在行文本 <code class="docutils literal notranslate"><span class="pre">{\k0}Hel{\k0}lo</span> <span class="pre">{\k0}Pyon{\k0}FX</span> <span class="pre">{\k0}users!</span></code> , 音节 “Pyon” 的 word_i=1)。</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>int</p>
@@ -806,7 +806,7 @@
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Syllable.start_time">
 <code class="sig-name descname">start_time</code><a class="headerlink" href="#pyonfx.ass_core.Syllable.start_time" title="Permalink to this definition">¶</a></dt>
-<dd><p>Syllable start time (in milliseconds).</p>
+<dd><p>音节开始时间（毫秒）。</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>int</p>
@@ -817,7 +817,7 @@
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Syllable.end_time">
 <code class="sig-name descname">end_time</code><a class="headerlink" href="#pyonfx.ass_core.Syllable.end_time" title="Permalink to this definition">¶</a></dt>
-<dd><p>Syllable end time (in milliseconds).</p>
+<dd><p>音节结束时间（毫秒）。</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>int</p>
@@ -828,7 +828,7 @@
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Syllable.duration">
 <code class="sig-name descname">duration</code><a class="headerlink" href="#pyonfx.ass_core.Syllable.duration" title="Permalink to this definition">¶</a></dt>
-<dd><p>Syllable duration (in milliseconds).</p>
+<dd><p>音节持续时间（毫秒）。</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>int</p>
@@ -839,7 +839,7 @@
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Syllable.styleref">
 <code class="sig-name descname">styleref</code><a class="headerlink" href="#pyonfx.ass_core.Syllable.styleref" title="Permalink to this definition">¶</a></dt>
-<dd><p>Reference to the Style object of this object original line.</p>
+<dd><p>此对象原始行的Style对象的引用。</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>obj</p>
@@ -850,7 +850,7 @@
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Syllable.text">
 <code class="sig-name descname">text</code><a class="headerlink" href="#pyonfx.ass_core.Syllable.text" title="Permalink to this definition">¶</a></dt>
-<dd><p>Syllable text.</p>
+<dd><p>音节文本。</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>str</p>
@@ -861,7 +861,7 @@
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Syllable.tags">
 <code class="sig-name descname">tags</code><a class="headerlink" href="#pyonfx.ass_core.Syllable.tags" title="Permalink to this definition">¶</a></dt>
-<dd><p>All the remaining tags before syl text apart k ones.</p>
+<dd><p>除k之外音节前面的所有标签。</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>str</p>
@@ -872,7 +872,7 @@
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Syllable.inline_fx">
 <code class="sig-name descname">inline_fx</code><a class="headerlink" href="#pyonfx.ass_core.Syllable.inline_fx" title="Permalink to this definition">¶</a></dt>
-<dd><p>Syllable inline effect (marked as -EFFECT in karaoke-time).</p>
+<dd><p>音节内联特效 (在K值后使用 -特效名)。</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>str</p>
@@ -883,7 +883,7 @@
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Syllable.prespace">
 <code class="sig-name descname">prespace</code><a class="headerlink" href="#pyonfx.ass_core.Syllable.prespace" title="Permalink to this definition">¶</a></dt>
-<dd><p>Syllable free space before text.</p>
+<dd><p>文本之前的音节空白空间。</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>int</p>
@@ -894,7 +894,7 @@
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Syllable.postspace">
 <code class="sig-name descname">postspace</code><a class="headerlink" href="#pyonfx.ass_core.Syllable.postspace" title="Permalink to this definition">¶</a></dt>
-<dd><p>Syllable free space after text.</p>
+<dd><p>文本之后的音节空白空间。</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>int</p>
@@ -905,7 +905,7 @@
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Syllable.width">
 <code class="sig-name descname">width</code><a class="headerlink" href="#pyonfx.ass_core.Syllable.width" title="Permalink to this definition">¶</a></dt>
-<dd><p>Syllable text width.</p>
+<dd><p>音节文本宽度。</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>float</p>
@@ -916,7 +916,7 @@
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Syllable.height">
 <code class="sig-name descname">height</code><a class="headerlink" href="#pyonfx.ass_core.Syllable.height" title="Permalink to this definition">¶</a></dt>
-<dd><p>Syllable text height.</p>
+<dd><p>音节文本高度。</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>float</p>
@@ -927,7 +927,7 @@
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Syllable.x">
 <code class="sig-name descname">x</code><a class="headerlink" href="#pyonfx.ass_core.Syllable.x" title="Permalink to this definition">¶</a></dt>
-<dd><p>Syllable text position horizontal (depends on alignment).</p>
+<dd><p>音节水平坐标（取决于对齐方式）。</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>float</p>
@@ -938,7 +938,7 @@
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Syllable.y">
 <code class="sig-name descname">y</code><a class="headerlink" href="#pyonfx.ass_core.Syllable.y" title="Permalink to this definition">¶</a></dt>
-<dd><p>Syllable text position vertical (depends on alignment).</p>
+<dd><p>音节垂直坐标（取决于对齐方式）。</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>float</p>
@@ -949,7 +949,7 @@
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Syllable.left">
 <code class="sig-name descname">left</code><a class="headerlink" href="#pyonfx.ass_core.Syllable.left" title="Permalink to this definition">¶</a></dt>
-<dd><p>Syllable text position left.</p>
+<dd><p>音节左侧横坐标。</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>float</p>
@@ -960,7 +960,7 @@
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Syllable.center">
 <code class="sig-name descname">center</code><a class="headerlink" href="#pyonfx.ass_core.Syllable.center" title="Permalink to this definition">¶</a></dt>
-<dd><p>Syllable text position center.</p>
+<dd><p>音节中心横坐标。</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>float</p>
@@ -971,7 +971,7 @@
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Syllable.right">
 <code class="sig-name descname">right</code><a class="headerlink" href="#pyonfx.ass_core.Syllable.right" title="Permalink to this definition">¶</a></dt>
-<dd><p>Syllable text position right.</p>
+<dd><p>音节右侧横坐标。</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>float</p>
@@ -982,7 +982,7 @@
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Syllable.top">
 <code class="sig-name descname">top</code><a class="headerlink" href="#pyonfx.ass_core.Syllable.top" title="Permalink to this definition">¶</a></dt>
-<dd><p>Syllable text position top.</p>
+<dd><p>音节顶部纵坐标。</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>float</p>
@@ -993,7 +993,7 @@
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Syllable.middle">
 <code class="sig-name descname">middle</code><a class="headerlink" href="#pyonfx.ass_core.Syllable.middle" title="Permalink to this definition">¶</a></dt>
-<dd><p>Syllable text position middle.</p>
+<dd><p>音节中心纵坐标。</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>float</p>
@@ -1004,7 +1004,7 @@
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Syllable.bottom">
 <code class="sig-name descname">bottom</code><a class="headerlink" href="#pyonfx.ass_core.Syllable.bottom" title="Permalink to this definition">¶</a></dt>
-<dd><p>Syllable text position bottom.</p>
+<dd><p>音节底部纵坐标。</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>float</p>
@@ -1017,13 +1017,13 @@
 <dl class="class">
 <dt id="pyonfx.ass_core.Word">
 <em class="property">class </em><code class="sig-prename descclassname">pyonfx.ass_core.</code><code class="sig-name descname">Word</code><a class="headerlink" href="#pyonfx.ass_core.Word" title="Permalink to this definition">¶</a></dt>
-<dd><p>Word object contains informations about a single word of a line in the Ass.</p>
-<p>A word can be defined as some text with some optional space before or after
-(e.g.: In the string “What a beautiful world!”, “beautiful” and “world” are both distinct words).</p>
+<dd><p>Word对象包含了Ass中一行的单个单词的信息。</p>
+<p>一个word可以是一些文本，在其前后都有一些可选的空格
+(e.g.: 在字符串“What a beautiful world!”中，“beautiful” 和 “world”都是不同的单词)。</p>
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Word.i">
 <code class="sig-name descname">i</code><a class="headerlink" href="#pyonfx.ass_core.Word.i" title="Permalink to this definition">¶</a></dt>
-<dd><p>Word index number</p>
+<dd><p>单词索引值。</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>int</p>
@@ -1034,7 +1034,7 @@
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Word.start_time">
 <code class="sig-name descname">start_time</code><a class="headerlink" href="#pyonfx.ass_core.Word.start_time" title="Permalink to this definition">¶</a></dt>
-<dd><p>Word start time (same as line start time) (in milliseconds).</p>
+<dd><p>单词开始时间（与行开始时间相同）（毫秒）。</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>int</p>
@@ -1045,7 +1045,7 @@
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Word.end_time">
 <code class="sig-name descname">end_time</code><a class="headerlink" href="#pyonfx.ass_core.Word.end_time" title="Permalink to this definition">¶</a></dt>
-<dd><p>Word end time (same as line end time) (in milliseconds).</p>
+<dd><p>单词结束时间（与行结束时间相同）（毫秒）。</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>int</p>
@@ -1056,7 +1056,7 @@
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Word.duration">
 <code class="sig-name descname">duration</code><a class="headerlink" href="#pyonfx.ass_core.Word.duration" title="Permalink to this definition">¶</a></dt>
-<dd><p>Word duration (same as line duration) (in milliseconds).</p>
+<dd><p>单词持续时间（与行持续时间相同）（毫秒）。</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>int</p>
@@ -1067,7 +1067,7 @@
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Word.styleref">
 <code class="sig-name descname">styleref</code><a class="headerlink" href="#pyonfx.ass_core.Word.styleref" title="Permalink to this definition">¶</a></dt>
-<dd><p>Reference to the Style object of this object original line.</p>
+<dd><p>此对象原始行的Style对象的引用。</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>obj</p>
@@ -1078,7 +1078,7 @@
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Word.text">
 <code class="sig-name descname">text</code><a class="headerlink" href="#pyonfx.ass_core.Word.text" title="Permalink to this definition">¶</a></dt>
-<dd><p>Word text.</p>
+<dd><p>单词文本。</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>str</p>
@@ -1089,7 +1089,7 @@
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Word.prespace">
 <code class="sig-name descname">prespace</code><a class="headerlink" href="#pyonfx.ass_core.Word.prespace" title="Permalink to this definition">¶</a></dt>
-<dd><p>Word free space before text.</p>
+<dd><p>文本之前的字空白空间。</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>int</p>
@@ -1100,7 +1100,7 @@
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Word.postspace">
 <code class="sig-name descname">postspace</code><a class="headerlink" href="#pyonfx.ass_core.Word.postspace" title="Permalink to this definition">¶</a></dt>
-<dd><p>Word free space after text.</p>
+<dd><p>文本之后的字空白空间。</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>int</p>
@@ -1111,7 +1111,7 @@
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Word.width">
 <code class="sig-name descname">width</code><a class="headerlink" href="#pyonfx.ass_core.Word.width" title="Permalink to this definition">¶</a></dt>
-<dd><p>Word text width.</p>
+<dd><p>单词文本宽度。</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>float</p>
@@ -1122,7 +1122,7 @@
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Word.height">
 <code class="sig-name descname">height</code><a class="headerlink" href="#pyonfx.ass_core.Word.height" title="Permalink to this definition">¶</a></dt>
-<dd><p>Word text height.</p>
+<dd><p>单词文本高度。</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>float</p>
@@ -1133,7 +1133,7 @@
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Word.x">
 <code class="sig-name descname">x</code><a class="headerlink" href="#pyonfx.ass_core.Word.x" title="Permalink to this definition">¶</a></dt>
-<dd><p>Word text position horizontal (depends on alignment).</p>
+<dd><p>单词水平坐标（取决于对齐方式）。</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>float</p>
@@ -1144,7 +1144,7 @@
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Word.y">
 <code class="sig-name descname">y</code><a class="headerlink" href="#pyonfx.ass_core.Word.y" title="Permalink to this definition">¶</a></dt>
-<dd><p>Word text position vertical (depends on alignment).</p>
+<dd><p>单词垂直坐标（取决于对齐方式）。</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>float</p>
@@ -1155,7 +1155,7 @@
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Word.left">
 <code class="sig-name descname">left</code><a class="headerlink" href="#pyonfx.ass_core.Word.left" title="Permalink to this definition">¶</a></dt>
-<dd><p>Word text position left.</p>
+<dd><p>单词左横坐标。</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>float</p>
@@ -1166,7 +1166,7 @@
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Word.center">
 <code class="sig-name descname">center</code><a class="headerlink" href="#pyonfx.ass_core.Word.center" title="Permalink to this definition">¶</a></dt>
-<dd><p>Word text position center.</p>
+<dd><p>单词中心横坐标。</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>float</p>
@@ -1177,7 +1177,7 @@
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Word.right">
 <code class="sig-name descname">right</code><a class="headerlink" href="#pyonfx.ass_core.Word.right" title="Permalink to this definition">¶</a></dt>
-<dd><p>Word text position right.</p>
+<dd><p>单词右横坐标。</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>float</p>
@@ -1188,7 +1188,7 @@
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Word.top">
 <code class="sig-name descname">top</code><a class="headerlink" href="#pyonfx.ass_core.Word.top" title="Permalink to this definition">¶</a></dt>
-<dd><p>Word text position top.</p>
+<dd><p>单词上部纵坐标。</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>float</p>
@@ -1199,7 +1199,7 @@
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Word.middle">
 <code class="sig-name descname">middle</code><a class="headerlink" href="#pyonfx.ass_core.Word.middle" title="Permalink to this definition">¶</a></dt>
-<dd><p>Word text position middle.</p>
+<dd><p>单词中心纵坐标。</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>float</p>
@@ -1210,7 +1210,7 @@
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Word.bottom">
 <code class="sig-name descname">bottom</code><a class="headerlink" href="#pyonfx.ass_core.Word.bottom" title="Permalink to this definition">¶</a></dt>
-<dd><p>Word text position bottom.</p>
+<dd><p>单词底部纵坐标。</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>float</p>
@@ -1223,15 +1223,15 @@
 <dl class="class">
 <dt id="pyonfx.ass_core.Line">
 <em class="property">class </em><code class="sig-prename descclassname">pyonfx.ass_core.</code><code class="sig-name descname">Line</code><a class="headerlink" href="#pyonfx.ass_core.Line" title="Permalink to this definition">¶</a></dt>
-<dd><p>Line object contains informations about a single line in the Ass.</p>
+<dd><p>Line对象包括了Ass中每一行的信息。</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>(*) = This field is available only if <a class="reference internal" href="#pyonfx.ass_core.Ass" title="pyonfx.ass_core.Ass"><code class="xref py py-class docutils literal notranslate"><span class="pre">extended</span></code></a> = True</p>
+<p>(*) = 此项仅在 <a class="reference internal" href="#pyonfx.ass_core.Ass" title="pyonfx.ass_core.Ass"><code class="xref py py-class docutils literal notranslate"><span class="pre">extended</span></code></a> = True 时有效</p>
 </div>
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Line.i">
 <code class="sig-name descname">i</code><a class="headerlink" href="#pyonfx.ass_core.Line.i" title="Permalink to this definition">¶</a></dt>
-<dd><p>Line index number</p>
+<dd><p>行索引值</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>int</p>
@@ -1242,7 +1242,7 @@
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Line.comment">
 <code class="sig-name descname">comment</code><a class="headerlink" href="#pyonfx.ass_core.Line.comment" title="Permalink to this definition">¶</a></dt>
-<dd><p>If <em>True</em>, this line will not be displayed on the screen.</p>
+<dd><p>是否为注释行。如果为 <em>True</em> ，这行将不会在屏幕上显示。</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>bool</p>
@@ -1253,7 +1253,7 @@
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Line.layer">
 <code class="sig-name descname">layer</code><a class="headerlink" href="#pyonfx.ass_core.Line.layer" title="Permalink to this definition">¶</a></dt>
-<dd><p>Layer for the line. Higher layer numbers are drawn on top of lower ones.</p>
+<dd><p>行的层号。层号较高的行将显示在层号较低的行上方。</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>int</p>
@@ -1264,7 +1264,7 @@
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Line.start_time">
 <code class="sig-name descname">start_time</code><a class="headerlink" href="#pyonfx.ass_core.Line.start_time" title="Permalink to this definition">¶</a></dt>
-<dd><p>Line start time (in milliseconds).</p>
+<dd><p>行开始时间（毫秒）。</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>int</p>
@@ -1275,7 +1275,7 @@
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Line.end_time">
 <code class="sig-name descname">end_time</code><a class="headerlink" href="#pyonfx.ass_core.Line.end_time" title="Permalink to this definition">¶</a></dt>
-<dd><p>Line end time (in milliseconds).</p>
+<dd><p>行结束时间（毫秒）。</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>int</p>
@@ -1286,7 +1286,7 @@
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Line.duration">
 <code class="sig-name descname">duration</code><a class="headerlink" href="#pyonfx.ass_core.Line.duration" title="Permalink to this definition">¶</a></dt>
-<dd><p>Line duration (in milliseconds) (*).</p>
+<dd><p>行持续时间（毫秒） (*)。</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>int</p>
@@ -1297,7 +1297,7 @@
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Line.leadin">
 <code class="sig-name descname">leadin</code><a class="headerlink" href="#pyonfx.ass_core.Line.leadin" title="Permalink to this definition">¶</a></dt>
-<dd><p>Time between this line and the previous one (in milliseconds; first line = 1000.1) (*).</p>
+<dd><p>行前时间（毫秒，首行为 1000.1） (*)。</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>float</p>
@@ -1308,7 +1308,7 @@
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Line.leadout">
 <code class="sig-name descname">leadout</code><a class="headerlink" href="#pyonfx.ass_core.Line.leadout" title="Permalink to this definition">¶</a></dt>
-<dd><p>Time between this line and the next one (in milliseconds; first line = 1000.1) (*).</p>
+<dd><p>行后时间（毫秒，首行为 1000.1） (*)。</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>float</p>
@@ -1319,7 +1319,7 @@
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Line.style">
 <code class="sig-name descname">style</code><a class="headerlink" href="#pyonfx.ass_core.Line.style" title="Permalink to this definition">¶</a></dt>
-<dd><p>Style name used for this line.</p>
+<dd><p>此行使用的样式名称。</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>str</p>
@@ -1330,7 +1330,7 @@
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Line.styleref">
 <code class="sig-name descname">styleref</code><a class="headerlink" href="#pyonfx.ass_core.Line.styleref" title="Permalink to this definition">¶</a></dt>
-<dd><p>Reference to the Style object of this line (*).</p>
+<dd><p>此行的Style对象的引用 (*)。</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>obj</p>
@@ -1341,7 +1341,7 @@
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Line.actor">
 <code class="sig-name descname">actor</code><a class="headerlink" href="#pyonfx.ass_core.Line.actor" title="Permalink to this definition">¶</a></dt>
-<dd><p>Actor field.</p>
+<dd><p>说话人。</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>str</p>
@@ -1352,7 +1352,7 @@
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Line.margin_l">
 <code class="sig-name descname">margin_l</code><a class="headerlink" href="#pyonfx.ass_core.Line.margin_l" title="Permalink to this definition">¶</a></dt>
-<dd><p>Left margin for this line.</p>
+<dd><p>该行的左边距。</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>int</p>
@@ -1363,7 +1363,7 @@
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Line.margin_r">
 <code class="sig-name descname">margin_r</code><a class="headerlink" href="#pyonfx.ass_core.Line.margin_r" title="Permalink to this definition">¶</a></dt>
-<dd><p>Right margin for this line.</p>
+<dd><p>该行的右边距。</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>int</p>
@@ -1374,7 +1374,7 @@
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Line.margin_v">
 <code class="sig-name descname">margin_v</code><a class="headerlink" href="#pyonfx.ass_core.Line.margin_v" title="Permalink to this definition">¶</a></dt>
-<dd><p>Vertical margin for this line.</p>
+<dd><p>该行的垂直边距。</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>int</p>
@@ -1385,7 +1385,7 @@
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Line.effect">
 <code class="sig-name descname">effect</code><a class="headerlink" href="#pyonfx.ass_core.Line.effect" title="Permalink to this definition">¶</a></dt>
-<dd><p>Effect field.</p>
+<dd><p>特效。</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>str</p>
@@ -1396,7 +1396,7 @@
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Line.raw_text">
 <code class="sig-name descname">raw_text</code><a class="headerlink" href="#pyonfx.ass_core.Line.raw_text" title="Permalink to this definition">¶</a></dt>
-<dd><p>Line raw text.</p>
+<dd><p>该行的原始文本。</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>str</p>
@@ -1407,7 +1407,7 @@
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Line.text">
 <code class="sig-name descname">text</code><a class="headerlink" href="#pyonfx.ass_core.Line.text" title="Permalink to this definition">¶</a></dt>
-<dd><p>Line stripped text (no tags).</p>
+<dd><p>该行的文本（无标签）。</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>str</p>
@@ -1418,7 +1418,7 @@
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Line.width">
 <code class="sig-name descname">width</code><a class="headerlink" href="#pyonfx.ass_core.Line.width" title="Permalink to this definition">¶</a></dt>
-<dd><p>Line text width (*).</p>
+<dd><p>行文本宽度 (*)。</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>float</p>
@@ -1429,7 +1429,7 @@
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Line.height">
 <code class="sig-name descname">height</code><a class="headerlink" href="#pyonfx.ass_core.Line.height" title="Permalink to this definition">¶</a></dt>
-<dd><p>Line text height (*).</p>
+<dd><p>行文本高度 (*)。</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>float</p>
@@ -1440,7 +1440,7 @@
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Line.ascent">
 <code class="sig-name descname">ascent</code><a class="headerlink" href="#pyonfx.ass_core.Line.ascent" title="Permalink to this definition">¶</a></dt>
-<dd><p>Line font ascent (*).</p>
+<dd><p>行上方距离 (*)。</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>float</p>
@@ -1451,7 +1451,7 @@
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Line.descent">
 <code class="sig-name descname">descent</code><a class="headerlink" href="#pyonfx.ass_core.Line.descent" title="Permalink to this definition">¶</a></dt>
-<dd><p>Line font descent (*).</p>
+<dd><p>行下方距离 (*)。</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>float</p>
@@ -1484,7 +1484,7 @@
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Line.x">
 <code class="sig-name descname">x</code><a class="headerlink" href="#pyonfx.ass_core.Line.x" title="Permalink to this definition">¶</a></dt>
-<dd><p>Line text position horizontal (depends on alignment) (*).</p>
+<dd><p>行水平坐标（取决于对齐方式）(*)。</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>float</p>
@@ -1495,7 +1495,7 @@
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Line.y">
 <code class="sig-name descname">y</code><a class="headerlink" href="#pyonfx.ass_core.Line.y" title="Permalink to this definition">¶</a></dt>
-<dd><p>Line text position vertical (depends on alignment) (*).</p>
+<dd><p>行垂直坐标（取决于对齐方式）(*)。</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>float</p>
@@ -1506,7 +1506,7 @@
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Line.left">
 <code class="sig-name descname">left</code><a class="headerlink" href="#pyonfx.ass_core.Line.left" title="Permalink to this definition">¶</a></dt>
-<dd><p>Line text position left (*).</p>
+<dd><p>行左侧横坐标 (*)。</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>float</p>
@@ -1517,7 +1517,7 @@
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Line.center">
 <code class="sig-name descname">center</code><a class="headerlink" href="#pyonfx.ass_core.Line.center" title="Permalink to this definition">¶</a></dt>
-<dd><p>Line text position center (*).</p>
+<dd><p>行中心横坐标 (*)。</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>float</p>
@@ -1528,7 +1528,7 @@
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Line.right">
 <code class="sig-name descname">right</code><a class="headerlink" href="#pyonfx.ass_core.Line.right" title="Permalink to this definition">¶</a></dt>
-<dd><p>Line text position right (*).</p>
+<dd><p>行右侧横坐标 (*)。</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>float</p>
@@ -1539,7 +1539,7 @@
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Line.top">
 <code class="sig-name descname">top</code><a class="headerlink" href="#pyonfx.ass_core.Line.top" title="Permalink to this definition">¶</a></dt>
-<dd><p>Line text position top (*).</p>
+<dd><p>行顶部纵坐标 (*)。</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>float</p>
@@ -1550,7 +1550,7 @@
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Line.middle">
 <code class="sig-name descname">middle</code><a class="headerlink" href="#pyonfx.ass_core.Line.middle" title="Permalink to this definition">¶</a></dt>
-<dd><p>Line text position middle (*).</p>
+<dd><p>行中心纵坐标 (*)。</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>float</p>
@@ -1561,7 +1561,7 @@
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Line.bottom">
 <code class="sig-name descname">bottom</code><a class="headerlink" href="#pyonfx.ass_core.Line.bottom" title="Permalink to this definition">¶</a></dt>
-<dd><p>Line text position bottom (*).</p>
+<dd><p>行底部纵坐标 (*)。</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>float</p>
@@ -1572,7 +1572,7 @@
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Line.words">
 <code class="sig-name descname">words</code><a class="headerlink" href="#pyonfx.ass_core.Line.words" title="Permalink to this definition">¶</a></dt>
-<dd><p>List containing objects <a class="reference internal" href="#pyonfx.ass_core.Word" title="pyonfx.ass_core.Word"><code class="xref py py-class docutils literal notranslate"><span class="pre">Word</span></code></a> in this line (*).</p>
+<dd><p>包含此行内 <a class="reference internal" href="#pyonfx.ass_core.Word" title="pyonfx.ass_core.Word"><code class="xref py py-class docutils literal notranslate"><span class="pre">Word</span></code></a> 对象的列表 (*)。</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>list</p>
@@ -1583,7 +1583,7 @@
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Line.syls">
 <code class="sig-name descname">syls</code><a class="headerlink" href="#pyonfx.ass_core.Line.syls" title="Permalink to this definition">¶</a></dt>
-<dd><p>List containing objects <a class="reference internal" href="#pyonfx.ass_core.Syllable" title="pyonfx.ass_core.Syllable"><code class="xref py py-class docutils literal notranslate"><span class="pre">Syllable</span></code></a> in this line (if available) (*).</p>
+<dd><p>包含此行内 <a class="reference internal" href="#pyonfx.ass_core.Syllable" title="pyonfx.ass_core.Syllable"><code class="xref py py-class docutils literal notranslate"><span class="pre">Syllable</span></code></a> 对象的列表(如果有) (*)。</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>list</p>
@@ -1594,7 +1594,7 @@
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Line.chars">
 <code class="sig-name descname">chars</code><a class="headerlink" href="#pyonfx.ass_core.Line.chars" title="Permalink to this definition">¶</a></dt>
-<dd><p>List containing objects <a class="reference internal" href="#pyonfx.ass_core.Char" title="pyonfx.ass_core.Char"><code class="xref py py-class docutils literal notranslate"><span class="pre">Char</span></code></a> in this line (*).</p>
+<dd><p>包含此行内 <a class="reference internal" href="#pyonfx.ass_core.Char" title="pyonfx.ass_core.Char"><code class="xref py py-class docutils literal notranslate"><span class="pre">Char</span></code></a> 对象的列表 (*)。</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>list</p>
@@ -1607,7 +1607,7 @@
 <code class="sig-name descname">copy</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyonfx.ass_core.Line.copy" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p>A deep copy of this object (line)</p>
+<dd class="field-odd"><p>此对象 (line) 的深度副本</p>
 </dd>
 </dl>
 </dd></dl>
@@ -1617,27 +1617,27 @@
 <dl class="class">
 <dt id="pyonfx.ass_core.Ass">
 <em class="property">class </em><code class="sig-prename descclassname">pyonfx.ass_core.</code><code class="sig-name descname">Ass</code><span class="sig-paren">(</span><em class="sig-param">path_input=''</em>, <em class="sig-param">path_output='Output.ass'</em>, <em class="sig-param">keep_original=True</em>, <em class="sig-param">extended=True</em>, <em class="sig-param">vertical_kanji=True</em><span class="sig-paren">)</span><a class="headerlink" href="#pyonfx.ass_core.Ass" title="Permalink to this definition">¶</a></dt>
-<dd><p>Contains all the informations about a file in the ASS format and the methods to work with it for both input and output.</p>
+<dd><p>包含关于 ASS 格式文件的所有信息，以及用于输入和输出的方法。</p>
 <div class="line-block">
-<div class="line">Usually you will create an Ass object and use it for input and output (see <a class="reference internal" href="#example">example</a> section).</div>
-<div class="line">PyonFX set automatically an absolute path for all the info in the output, so that wherever you will
-put your generated file, it should always load correctly video and audio.</div>
+<div class="line">通常，您将创建一个 Ass 对象，并将其用于输入和输出(参见 <a class="reference internal" href="#example">example</a> section)。</div>
+<div class="line">PyonFX 会自动把输出文件中的所有信息设置为绝对路径，这样无论你
+把生成的文件放在哪里，它都会正确地加载视频和音频。</div>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>path_input</strong> (<em>str</em>) – Path for the input file (either relative to your .py file or absolute).</p></li>
-<li><p><strong>path_output</strong> (<em>str</em>) – Path for the output file (either relative to your .py file or absolute) (DEFAULT: “Output.ass”).</p></li>
-<li><p><strong>keep_original</strong> (<em>bool</em>) – If True, you will find all the lines of the input file commented before the new lines generated.</p></li>
-<li><p><strong>extended</strong> (<em>bool</em>) – Calculate more informations from lines (usually you will not have to touch this).</p></li>
-<li><p><strong>vertical_kanji</strong> (<em>bool</em>) – If True, line text with alignment 4, 5 or 6 will be positioned vertically.</p></li>
+<li><p><strong>path_input</strong> (<em>str</em>) – 输入文件路径 (可以为与 .py 文件的相对路径，也可以是绝对路径)。</p></li>
+<li><p><strong>path_output</strong> (<em>str</em>) – 输出文件路径 (可以为与 .py 文件的相对路径，也可以是绝对路径) (默认: “Output.ass”)。</p></li>
+<li><p><strong>keep_original</strong> (<em>bool</em>) – 如果为True，输入文件的所有行将注释后放在生成的新行之前。</p></li>
+<li><p><strong>extended</strong> (<em>bool</em>) – 计算更多来自行的信息(通常用不到)。</p></li>
+<li><p><strong>vertical_kanji</strong> (<em>bool</em>) – 如果为True，对齐方式为 4, 5, 6 的行会被竖直放置。</p></li>
 </ul>
 </dd>
 </dl>
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Ass.path_input">
 <code class="sig-name descname">path_input</code><a class="headerlink" href="#pyonfx.ass_core.Ass.path_input" title="Permalink to this definition">¶</a></dt>
-<dd><p>Path for input file (absolute).</p>
+<dd><p>输入文件绝对路径。</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>str</p>
@@ -1648,7 +1648,7 @@ put your generated file, it should always load correctly video and audio.</div>
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Ass.path_output">
 <code class="sig-name descname">path_output</code><a class="headerlink" href="#pyonfx.ass_core.Ass.path_output" title="Permalink to this definition">¶</a></dt>
-<dd><p>Path for output file (absolute).</p>
+<dd><p>输出文件绝对路径。</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>str</p>
@@ -1659,7 +1659,7 @@ put your generated file, it should always load correctly video and audio.</div>
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Ass.meta">
 <code class="sig-name descname">meta</code><a class="headerlink" href="#pyonfx.ass_core.Ass.meta" title="Permalink to this definition">¶</a></dt>
-<dd><p>Contains informations about the ASS given.</p>
+<dd><p>包含给出的 ASS 的信息。</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p><a class="reference internal" href="#pyonfx.ass_core.Meta" title="pyonfx.ass_core.Meta"><code class="xref py py-class docutils literal notranslate"><span class="pre">Meta</span></code></a></p>
@@ -1670,7 +1670,7 @@ put your generated file, it should always load correctly video and audio.</div>
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Ass.styles">
 <code class="sig-name descname">styles</code><a class="headerlink" href="#pyonfx.ass_core.Ass.styles" title="Permalink to this definition">¶</a></dt>
-<dd><p>Contains all the styles in the ASS given.</p>
+<dd><p>包含给出的 ASS 的所有样式。</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>list of <a class="reference internal" href="#pyonfx.ass_core.Style" title="pyonfx.ass_core.Style"><code class="xref py py-class docutils literal notranslate"><span class="pre">Style</span></code></a></p>
@@ -1681,7 +1681,7 @@ put your generated file, it should always load correctly video and audio.</div>
 <dl class="attribute">
 <dt id="pyonfx.ass_core.Ass.lines">
 <code class="sig-name descname">lines</code><a class="headerlink" href="#pyonfx.ass_core.Ass.lines" title="Permalink to this definition">¶</a></dt>
-<dd><p>Contains all the lines (events) in the ASS given.</p>
+<dd><p>包含给出的 ASS 的所有行（事件）。</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
 <dd class="field-odd"><p>list of <a class="reference internal" href="#pyonfx.ass_core.Line" title="pyonfx.ass_core.Line"><code class="xref py py-class docutils literal notranslate"><span class="pre">Line</span></code></a></p>
@@ -1699,7 +1699,7 @@ put your generated file, it should always load correctly video and audio.</div>
 <dl class="method">
 <dt id="pyonfx.ass_core.Ass.get_data">
 <code class="sig-name descname">get_data</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyonfx.ass_core.Ass.get_data" title="Permalink to this definition">¶</a></dt>
-<dd><p>Utility function to retrieve easily meta styles and lines.</p>
+<dd><p>实用功能，可轻松检索元样式和行。</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p><a class="reference internal" href="#pyonfx.ass_core.Ass.meta" title="pyonfx.ass_core.Ass.meta"><code class="xref py py-attr docutils literal notranslate"><span class="pre">meta</span></code></a>, <a class="reference internal" href="#pyonfx.ass_core.Ass.styles" title="pyonfx.ass_core.Ass.styles"><code class="xref py py-attr docutils literal notranslate"><span class="pre">styles</span></code></a> and <a class="reference internal" href="#pyonfx.ass_core.Ass.lines" title="pyonfx.ass_core.Ass.lines"><code class="xref py py-attr docutils literal notranslate"><span class="pre">lines</span></code></a></p>
@@ -1710,12 +1710,12 @@ put your generated file, it should always load correctly video and audio.</div>
 <dl class="method">
 <dt id="pyonfx.ass_core.Ass.write_line">
 <code class="sig-name descname">write_line</code><span class="sig-paren">(</span><em class="sig-param">line</em><span class="sig-paren">)</span><a class="headerlink" href="#pyonfx.ass_core.Ass.write_line" title="Permalink to this definition">¶</a></dt>
-<dd><p>Appends a line to the output list (which is private) that later on will be written to the output file when calling save().</p>
-<p>Use it whenever you’ve prepared a line, it will not impact performance since you
-will not actually write anything until <a class="reference internal" href="#pyonfx.ass_core.Ass.save" title="pyonfx.ass_core.Ass.save"><code class="xref py py-func docutils literal notranslate"><span class="pre">save()</span></code></a> will be called.</p>
+<dd><p>在输出列表上追加一行 (私有)，调用 save() 时会被写入输出文件。</p>
+<p>记得准备好一行后调用它，并且在调用 <a class="reference internal" href="#pyonfx.ass_core.Ass.save" title="pyonfx.ass_core.Ass.save"><code class="xref py py-func docutils literal notranslate"><span class="pre">save()</span></code></a>
+之前什么也不会做，因为没有写入任何内容。</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>line</strong> (<a class="reference internal" href="#pyonfx.ass_core.Line" title="pyonfx.ass_core.Line"><code class="xref py py-class docutils literal notranslate"><span class="pre">Line</span></code></a>) – A line object. If not valid, TypeError is raised.</p>
+<dd class="field-odd"><p><strong>line</strong> (<a class="reference internal" href="#pyonfx.ass_core.Line" title="pyonfx.ass_core.Line"><code class="xref py py-class docutils literal notranslate"><span class="pre">Line</span></code></a>) – 一个line对象。如果无效，则抛出 TypeError 异常。</p>
 </dd>
 </dl>
 </dd></dl>
@@ -1723,10 +1723,10 @@ will not actually write anything until <a class="reference internal" href="#pyon
 <dl class="method">
 <dt id="pyonfx.ass_core.Ass.save">
 <code class="sig-name descname">save</code><span class="sig-paren">(</span><em class="sig-param">quiet=False</em><span class="sig-paren">)</span><a class="headerlink" href="#pyonfx.ass_core.Ass.save" title="Permalink to this definition">¶</a></dt>
-<dd><p>Write everything inside the private output list to a file.</p>
+<dd><p>将私有输出列表中的内容写入文件。</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>quiet</strong> (<em>bool</em>) – If True, you will not get printed any message.</p>
+<dd class="field-odd"><p><strong>quiet</strong> (<em>bool</em>) – 如果为True，将不会输出任何信息。</p>
 </dd>
 </dl>
 </dd></dl>
@@ -1734,11 +1734,11 @@ will not actually write anything until <a class="reference internal" href="#pyon
 <dl class="method">
 <dt id="pyonfx.ass_core.Ass.open_aegisub">
 <code class="sig-name descname">open_aegisub</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyonfx.ass_core.Ass.open_aegisub" title="Permalink to this definition">¶</a></dt>
-<dd><p>Open the output (specified in self.path_output) with Aegisub.</p>
-<p>This can be usefull if you don’t have MPV installed or you want to look at your output in detailed.</p>
+<dd><p>用Aegisub打开输出文件 (在 self.path_output 中指定)。</p>
+<p>如果您未安装MPV或想要详细查看输出文件，这很有用。</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p>0 if success, -1 if the output couldn’t be opened.</p>
+<dd class="field-odd"><p>成功返回0，如果输出文件无法打开则返回-1。</p>
 </dd>
 </dl>
 </dd></dl>
@@ -1746,15 +1746,15 @@ will not actually write anything until <a class="reference internal" href="#pyon
 <dl class="method">
 <dt id="pyonfx.ass_core.Ass.open_mpv">
 <code class="sig-name descname">open_mpv</code><span class="sig-paren">(</span><em class="sig-param">video_path=''</em>, <em class="sig-param">video_start=''</em>, <em class="sig-param">full_screen=False</em><span class="sig-paren">)</span><a class="headerlink" href="#pyonfx.ass_core.Ass.open_mpv" title="Permalink to this definition">¶</a></dt>
-<dd><p>Open the output (specified in self.path_output) in softsub with the MPV player.
-To utilize this function, MPV player is required. Additionally if you’re on Windows, MPV must be in the PATH (check <a class="reference external" href="https://pyonfx.readthedocs.io/en/latest/quick%20start.html#installation-extra-step">https://pyonfx.readthedocs.io/en/latest/quick%20start.html#installation-extra-step</a>).</p>
-<p>This is one of the fastest way to reproduce your output in a comfortable way.</p>
+<dd><p>用MPV播放器以软字幕打开输出文件 (在 self.path_output 中指定)。
+要使用这个函数，需要安装MPV。并且如果您使用的是Windows的话，需要添加MPV到PATH中 (转到 <a class="reference external" href="https://pyonfx.readthedocs.io/en/latest/quick%20start.html#installation-extra-step">https://pyonfx.readthedocs.io/en/latest/quick%20start.html#installation-extra-step</a>).</p>
+<p>这是以一种舒适的方式播放输出文件的最快的方法之一。</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>video_path</strong> (<em>string</em>) – The video file path (absolute) to reproduce. If not specified, <strong>meta.video</strong> is automatically taken.</p></li>
-<li><p><strong>video_start</strong> (<em>string</em>) – The start time for the video (more info: <a class="reference external" href="https://mpv.io/manual/master/#options-start">https://mpv.io/manual/master/#options-start</a>). If not specified, 0 is automatically taken.</p></li>
-<li><p><strong>full_screen</strong> (<em>bool</em>) – If True, it will reproduce the output in full screen. If not specified, False is automatically taken.</p></li>
+<li><p><strong>video_path</strong> (<em>string</em>) – 要播放的视频的绝对路径。如果未指定，将自动使用**meta.video**。</p></li>
+<li><p><strong>video_start</strong> (<em>string</em>) – 视频开始时间 (更多信息，请转到: <a class="reference external" href="https://mpv.io/manual/master/#options-start">https://mpv.io/manual/master/#options-start</a>)。如果未指定，将自动使用0.</p></li>
+<li><p><strong>full_screen</strong> (<em>bool</em>) – 如果为True，将全屏播放输出文件。如果未指定，将自动使用False。</p></li>
 </ul>
 </dd>
 </dl>
@@ -1775,7 +1775,7 @@ To utilize this function, MPV player is required. Additionally if you’re on Wi
         <a href="convert.html" class="btn btn-neutral float-right" title="Convert Functions" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="index.html" class="btn btn-neutral float-left" title="The PyonFX Library Reference" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="index.html" class="btn btn-neutral float-left" title="PyonFX库参考" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

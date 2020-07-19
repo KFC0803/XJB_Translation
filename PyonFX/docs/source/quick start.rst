@@ -15,7 +15,8 @@
 Windows
 +++++++
 
-总之，如果您还没 **安装Python3** ， 您可以从 `官网 <https://www.python.org/downloads/>`_ 上 **下载** 。
+总之，如果您还没 **安装Python3** ， 
+您可以从 `官网 <https://www.python.org/downloads/>`_ 上 **下载** 。
 请确保勾选“Add Python 3.x to PATH”复选框。这使得您不需要进行额外操作来使Python可以在命令行中被调用。
 
 
@@ -71,6 +72,27 @@ openSUSE
    
    sudo zypper install python3 python3-pip cairo-devel pkg-config python3-devel gcc gobject-introspection-devel python3-gobject python3-gobject-Gdk typelib-1_0-Gtk-3_0 libgtk-3-0
    python3 -m pip install --upgrade https://github.com/CoffeeStraw/PyonFX/zipball/master
+
+macOS
++++++
+
+您可能需要先安装 `Homebrew <https://brew.sh/>`_ 。
+
+警告：下面的第一个命令还未完全测试。如果您遇到任何问题，请创建一个issue或参考 `官方的安装指南 <https://pygobject.readthedocs.io/en/latest/getting_started.html>`_ 。
+
+.. code-block:: sh
+   :emphasize-lines: 1,2
+   
+   brew install pygobject3 gtk+3 cairo py3cairo pkg-config
+   python3 -m pip install --upgrade https://github.com/CoffeeStraw/PyonFX/zipball/master
+
+警告：如果输出没有正确渲染，可能需要将 PangoCairo 后端更改为 fontconfig。
+
+.. code-block:: sh
+   :emphasize-lines: 1
+   
+   PANGOCAIRO_BACKEND=fc python3 namefile.py
+
 
 安装 - 额外步骤
 +++++++++++++++++++++++++

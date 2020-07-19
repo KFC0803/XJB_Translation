@@ -1,19 +1,19 @@
 .. _reference-index:
 
 #################################
-  The PyonFX Library Reference
+  PyonFX库参考 
 #################################
 
-| This reference manual describes all the classes and functions provided by the library.
-| It is terse, but attempts to be exact and complete.
+| 本参考手册描述了本库提供的所有类和函数。
+| 它很简洁，但试图做到精确和完整。
 
-For ASS parsing functions and object's classes, you can go on :ref:`ass-core-ref` section. 
+对于ASS解析函数和对象类，请转到 :ref:`ass-core-ref` 部分。
 
-For Convert functions usefull to convert everything based on ASS format to something more comfortable (and the other way around), you can go on :ref:`convert-ref` section. 
+对于Convert函数，可以将基于ASS格式的所有内容转换为更舒适的格式（双向），请转到 :ref:`convert-ref` 部分。
 
-For Shape functions that will let you do complex calculations with shapes in ASS format, you can go on :ref:`shape-ref` section. 
+对于能以ASS格式对形状进行复杂计算的函数，请转到 :ref:`shape-ref` 部分。
 
-For general utility functions, you can go on :ref:`utils-ref` section.
+对于常规实用函数，请转到 :ref:`utils-ref` 部分。
 
 
 .. toctree::
